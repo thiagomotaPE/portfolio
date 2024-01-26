@@ -5,7 +5,7 @@ header {
     align-items: center;
 
     padding: 15px;
-    margin: 20px;
+    margin: 15px;
     margin-left: 30px;
     margin-right: 30px;
 }
@@ -15,20 +15,21 @@ header > .logo-area > a {
 }
 
 header > .logo-area > a h1 {
-    font-family: 'Bebas Neue';
+    font-family: var(--firstFont);
     font-size: 44px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 5.6px;
+    letter-spacing: 6.6px;
 
     color: var(--lettersColor);
 }
 
 header > .navigation-area > nav > a {
-    font-family: 'Poppins';
+    font-family: var(--secondFont);
     font-weight: 400;
-    font-size: 18px;
+    font-size: 16px;
     text-decoration: none;
+    letter-spacing: 2.5px;
     color: var(--lettersColor);
 
     margin: 35px;

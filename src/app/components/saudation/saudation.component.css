@@ -1,0 +1,18 @@
+p {
+    color: var(--lettersColor);
+
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 5px; 
+}
+
+h1 {
+
+}
+
+button {
+
+}
