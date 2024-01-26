@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400&display=swap');
 
-:root{
+:root {
     /* Colors */
     --contrastColor: #FF570A;
     --contrastColor2: #473BF0;
@@ -16,12 +16,26 @@
     --secondFont: 'Poppins';
 }
 
+:root .light-theme {
+    /* Colors */
+    --contrastColor: #FF570A;
+    --contrastColor2: #473BF0;
+    --contrastColor3: #02D463;
+    --backgroundColor1:#F8F0FB;
+    --backgroundColor2: #3E3B3B;
+    --lettersColor: #252323;
+
+    /* fonts */
+    --firstFont: 'Bebas Neue';
+    --secondFont: 'Poppins';
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-html {
+body {
     background-color: var(--backgroundColor1);
 }

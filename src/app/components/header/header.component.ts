@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  public toggleTheme() {
+    const theme = document.body.classList.toggle('light-theme');
+  }
 }
