@@ -9,10 +9,37 @@ p {
     letter-spacing: 5px; 
 }
 
-h1 {
+.label1 {
+    margin-bottom: 8px;
+}
 
+h1 {
+    font-family: var(--firstFont);
+    font-size: 6rem;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 10px;
+
+    color: var(--lettersColor);
 }
 
 button {
+    padding: 15px 35px;
+    margin-top: 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 
+    font-family: var(--secondFont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    border-radius: 50px;
+    border: 3px solid var(--contrastColor);
+
+    background: transparent;
+    color: var(--lettersColor);
 }
