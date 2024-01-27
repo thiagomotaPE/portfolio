@@ -8,6 +8,7 @@ header {
     margin: 15px;
     margin-left: 30px;
     margin-right: 30px;
+    margin-bottom: 0;
 }
 
 header > .logo-area > a {
@@ -16,10 +17,10 @@ header > .logo-area > a {
 
 header > .logo-area > a h1 {
     font-family: var(--firstFont);
-    font-size: 44px;
+    font-size: 48px;
     font-style: normal;
     font-weight: 400;
-    letter-spacing: 6.6px;
+    letter-spacing: 7.6px;
 
     color: var(--lettersColor);
 }

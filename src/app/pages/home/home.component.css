@@ -1,0 +1,40 @@
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+main > .saudation {
+    margin-top: 60px;
+    margin-right: 60px;
+}
+main > .saudation .social-midias {
+    margin-top: 60px;
+}
+
+main > .saudation > .social-midias > nav > a > i {
+   margin-right: 20px;
+   font-size: 35px;
+   color: var(--lettersColor);
+}
+main > .avatar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+}
+
+main > .avatar img {
+    /* box-shadow: 5px 5px 5px black; */
+}
+
+main > .avatar label {
+    background-color: var(--contrastColor);
+    width: 90%;
+    height: 4px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.753);
+}
