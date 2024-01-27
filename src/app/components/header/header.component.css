@@ -101,7 +101,7 @@ header > .theme-area .switch .checkbox {
 }
   
 .checkbox:checked + .slider {
-    background-color: var(--lettersColor);
+    background-color: var(--background1);
 }
   
 .checkbox:checked + .slider:before {
