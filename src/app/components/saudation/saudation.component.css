@@ -13,7 +13,16 @@ p {
     margin-bottom: 5px;
 }
 
-h1 {
+.name {
+    display: flex;
+    flex-direction: row;
+}
+
+.name .last-name {
+    margin-left: 30px;
+}
+
+h1 span {
     font-family: var(--firstFont);
     font-size: 7rem;
     font-style: normal;
@@ -21,6 +30,12 @@ h1 {
     letter-spacing: 15px;
 
     color: var(--lettersColor);
+
+    transition: color 0.2s ease-in-out;
+}
+
+h1 span:hover {
+    color: var(--contrastColor);
 }
 
 p > span {
@@ -43,7 +58,14 @@ button {
 
     border-radius: 50px;
     border: 3px solid var(--contrastColor);
+    box-shadow: -5px 7px 5px rgba(0, 0, 0, 0.39);
 
     background: transparent;
     color: var(--lettersColor);
+
+    transition: color 0.4s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--contrastColor);
 }

@@ -11,6 +11,7 @@ main {
 main > .saudation {
     margin-top: 60px;
     margin-right: 60px;
+    margin-left: 30px;
 }
 main > .saudation .social-midias {
     margin-top: 60px;
@@ -20,7 +21,16 @@ main > .saudation > .social-midias > nav > a > i {
    margin-right: 20px;
    font-size: 35px;
    color: var(--lettersColor);
+
+   transition: color 0.2s ease-in-out;
 }
+
+main > .saudation > .social-midias > nav > a > i:hover {
+    color: var(--contrastColor);
+    transform: translateY(-10px);
+    transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+}
+
 main > .avatar{
     display: flex;
     flex-direction: column;
