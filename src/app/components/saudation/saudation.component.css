@@ -7,10 +7,15 @@ p {
     font-weight: 400;
     line-height: normal;
     letter-spacing: 5px; 
+    cursor: context-menu;
 }
 
 .label1 {
     margin-bottom: 5px;
+}
+
+.label1 > .hi:hover {
+    animation: 0.3s linear infinite;
 }
 
 .name {
@@ -32,14 +37,35 @@ h1 span {
     color: var(--lettersColor);
 
     transition: color 0.2s ease-in-out;
+    cursor: context-menu;
 }
 
 h1 span:hover {
     color: var(--contrastColor);
 }
 
-p > span {
+.function .icon {
     margin-right: 3px;
+}
+
+.function .function-span {
+    position: relative;
+}
+
+.function .function-span::before{
+    content: '';
+    animation: words 40s infinite;
+}
+
+.function .function-span::after {
+    content: '';
+    background-color: var(--backgroundColor1);
+    position: absolute;
+    width: calc(100% + 8px);
+    height: 25px;
+    border-left: 2px solid var(--contrastColor);
+    right: -8px;
+    animation: cursor .8s infinite linear,typing 40s steps(34) infinite;
 }
 
 button {
@@ -63,9 +89,43 @@ button {
     background: transparent;
     color: var(--lettersColor);
 
-    transition: color 0.4s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 button:hover {
     background-color: var(--contrastColor);
+}
+
+@keyframes cursor {
+    to {
+        border-left: 2px solid var(--backgroundColor1);
+    }
+}
+
+@keyframes words {
+    0%,20%{
+        content: 'Desenvolvedor de Software';
+    }
+    21%,40%{
+        content: 'Desenvolvedor Fullstack';
+    }
+    41%,60%{
+        content: 'Web Designer';
+    }
+    61%,80%{
+        content: 'Desenvolvedor Freelancer';
+    }
+    81%,100%{
+        content: 'Desenvolvedor de Jogos';
+    }
+}
+
+@keyframes typing {
+    10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{
+        width: 0;
+    }
+
+    5%,20%,25%,40%,45%,60%,65%,80%,85%{
+        width: calc(100% + 8px);
+    }
 }
