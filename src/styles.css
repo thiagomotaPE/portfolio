@@ -38,4 +38,12 @@
 
 body {
     background-color: var(--backgroundColor1);
+    &::-webkit-scrollbar{
+        background-color: var(--backgroundColor1);
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--contrastColor);
+        height: 138px;
+    }
 }

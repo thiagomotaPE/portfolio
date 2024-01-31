@@ -14,8 +14,8 @@ p {
     margin-bottom: 5px;
 }
 
-.label1 > .hi:hover {
-    animation: 0.3s linear infinite;
+.label1 > .hi {
+    z-index: 2;
 }
 
 .name {

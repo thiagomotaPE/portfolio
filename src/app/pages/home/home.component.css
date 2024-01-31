@@ -2,10 +2,15 @@ main {
     display: flex;
     flex-direction: row;
     justify-content: center;
+
+    width: 90vw;
+    height: 80vh;
     
     margin-top: 10px;
     margin-left: 30px;
     margin-right: 30px;
+
+    background-color: red;
 }
 
 main > .saudation {
@@ -62,8 +67,13 @@ main > .avatar .branch-icon {
     transform: rotate(18.407deg);
     right: 550px;
     bottom: 100px;
+    transition: all 0.1s ease-in-out;
 
     z-index: 2;
+}
+
+main > .avatar .branch-icon:hover {
+    font-size: 35px;
 }
 
 main > .avatar .ghost-icon {
@@ -117,4 +127,28 @@ main > .avatar label {
     100% {
       transform: rotate(360deg);
     }
-  }
+}
+
+/* Sessão about */
+.about {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+    margin-top: 10px;
+    margin-left: 30px;
+    margin-right: 30px;
+
+    background-color: red;
+}
+
+.about > .perfil-photo img {
+    width: 350px;
+    height: 350px;
+    margin-left: 60px;
+
+    border: 2px solid var(--contrastColor);
+    border-radius: 15px;
+
+}
