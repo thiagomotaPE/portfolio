@@ -1,0 +1,92 @@
+.avatar-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9%;
+}
+
+.avatar-box i {
+    position: absolute;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.avatar-box .code-icon {
+    color: var(--contrastColor2);
+    filter: drop-shadow(0px 15px 2px rgba(0, 0, 0, 0.40));
+    
+    transform: rotate(18.407deg);
+    right: 430px;
+    top: 130px;
+
+    z-index: 2;
+}
+
+.avatar-box .branch-icon {
+    color: var(--contrastColor);
+    filter: drop-shadow(0px 15px 2px rgba(0, 0, 0, 0.40));
+    
+    transform: rotate(18.407deg);
+    right: 550px;
+    bottom: 100px;
+    transition: all 0.1s ease-in-out;
+
+    z-index: 2;
+}
+
+.avatar-box .branch-icon:hover {
+    font-size: 35px;
+}
+
+.avatar-box .ghost-icon {
+    color: var(--lettersColor);
+    filter: drop-shadow(0px 15px 2px rgba(0, 0, 0, 0.40));
+    cursor: pointer;
+
+    transform: rotate(-15.263deg);
+    right: 120px;
+    top: 180px;
+
+    z-index: 2;
+}
+
+.avatar-box .ghost-icon:hover {
+    animation: spin78236 calc(0.8 * 2.5) infinite linear;
+}
+
+.avatar-box .asterisk-icon {
+    color: var(--contrastColor3);
+    filter: drop-shadow(0px 13px 2px rgba(0, 0, 0, 0.50));
+
+    transform: rotate(18.407deg);
+    right: 215px;
+    bottom: 145px;
+    z-index: 2;
+}
+
+.avatar-box .asterisk-icon:hover {
+    filter: none;
+    animation: rotation 2s linear infinite;
+}
+
+.avatar-box img {
+    filter: drop-shadow(15px 0px 8px rgba(0, 0, 0, 0.50));
+    z-index: 1
+}
+
+.avatar-box label {
+    background-color: var(--contrastColor);
+    width: 90%;
+    height: 4px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.753);
+}
+
+@keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+  
+    100% {
+      transform: rotate(360deg);
+    }
+}

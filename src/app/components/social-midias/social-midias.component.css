@@ -1,0 +1,13 @@
+nav > a > i {
+    margin-right: 20px;
+    font-size: 35px;
+    color: var(--lettersColor);
+ 
+    transition: color 0.2s ease-in-out;
+ }
+ 
+nav > a > i:hover {
+     color: var(--contrastColor);
+     transform: translateY(-10px);
+     transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
+ }

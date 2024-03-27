@@ -38,6 +38,7 @@
 
 body {
     background-color: var(--backgroundColor1);
+    
     &::-webkit-scrollbar{
         background-color: var(--backgroundColor1);
         width: 5px;

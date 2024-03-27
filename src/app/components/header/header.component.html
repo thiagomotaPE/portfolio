@@ -1,21 +1,24 @@
-<header>
+<header [ngClass]="{'scrolled': isScrolled}">
     <div class="logo-area">
         <a href="/">
-            <h1>Mota</h1>
+            <h1 id="logo" class="logo">Mota</h1>
         </a>
     </div>
+
     <div class="navigation-area">
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Experiencia</a>
+            <a href="#home">Inicio</a>
+            <a href="#about">Sobre mim</a>
+            <a href="#projects">Projetos</a>
+            <a href="#experience">Experiencia</a>
         </nav>
     </div>
+
     <div class="theme-area">
-        <label class="switch">
-            <input class="checkbox" type="checkbox" (click)="toggleTheme()"/>
-            <span class="slider round"></span>
-        </label>
+        <app-theme-button></app-theme-button>
+    </div>
+
+    <div class="burguer-menu">
+        <i class="fa-solid fa-burger"></i>
     </div>
 </header>

@@ -1,0 +1,27 @@
+button {
+    padding: 15px 35px;
+    margin-top: 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    font-family: var(--secondFont);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 3.6px;
+
+    border-radius: 50px;
+    border: 3px solid var(--contrastColor);
+    box-shadow: -5px 7px 5px rgba(0, 0, 0, 0.39);
+
+    background: transparent;
+    color: var(--lettersColor);
+
+    transition: 0.2s ease-in-out;
+}
+
+button:hover {
+    background-color: var(--contrastColor);
+}
