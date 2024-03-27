@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-social-midias',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './social-midias.component.css'
 })
 export class SocialMidiasComponent {
-
+  @Input() icons!: string[];
 }

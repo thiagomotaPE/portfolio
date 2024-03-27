@@ -1,14 +1,16 @@
-<nav>
-    <a href="https://www.linkedin.com/in/thiagomotape/" target="_blank">
-        <i class="fa-brands fa-linkedin"></i>
-    </a>
-    <a href="https://github.com/thiagomotaPE" target="_blank">
-        <i class="fa-brands fa-square-github"></i>
-    </a>
-    <a href="https://dev.to/thiagomotape" target="_blank">
-        <i class="fa-brands fa-dev"></i>
-    </a>
-    <a href="https://www.instagram.com/eu_thiagomota/" target="_blank">
-        <i class="fa-brands fa-square-instagram"></i>
-    </a>
-</nav>
+@if (icons) {
+    <nav>
+        <a href="https://www.linkedin.com/in/thiagomotape/" target="_blank">
+            <i [class]="icons[0]"></i>
+        </a>
+        <a href="https://github.com/thiagomotaPE" target="_blank">
+            <i [class]="icons[1]"></i>
+        </a>
+        <a href="https://dev.to/thiagomotape" target="_blank">
+            <i [class]="icons[2]"></i>
+        </a>
+        <a href="https://www.instagram.com/eu_thiagomota/" target="_blank">
+            <i [class]="icons[3]" ></i>
+        </a>
+    </nav>
+}

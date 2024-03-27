@@ -1,0 +1,67 @@
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+    padding: 15px;
+    margin: 0px 25px;
+    width: 97vw;
+
+    bottom: 0;
+    z-index: 100;
+}
+
+nav > a > i {
+    margin-right: 20px;
+    font-size: 20px;
+    color: var(--lettersColor);
+ 
+    transition: color 0.2s ease-in-out;
+ }
+ 
+nav > a > i:hover {
+     color: var(--contrastColor);
+}
+
+.logo-area > a {
+    text-decoration: none;
+}
+
+#logo {
+    font-family: var(--firstFont);
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+
+    letter-spacing: 7.6px;
+    color: var(--lettersColor);
+}
+
+.copyright {
+    font-family: var(--secondFont);
+    font-size: 9px;
+    font-style: normal;
+    font-weight: 400;
+
+    letter-spacing: 2.5px;
+    color: var(--lettersColor);
+}
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 870px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 8px;
+
+        margin: 0px 0px;
+        width: 99vw;
+    }
+    .logo-area {
+        display: none;
+    }
+}
+
+/* Regras para telas grandes (monitores) */
+@media screen and (min-width: 1025px) {}
