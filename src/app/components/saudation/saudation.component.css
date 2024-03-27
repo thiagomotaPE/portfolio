@@ -10,10 +10,6 @@ p {
     cursor: context-menu;
 }
 
-.label1 {
-    margin-bottom: 5px;
-}
-
 .label1 > .hi {
     z-index: 2;
 }

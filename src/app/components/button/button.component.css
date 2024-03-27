@@ -1,9 +1,7 @@
 button {
     padding: 15px 35px;
-    margin-top: 36px;
     justify-content: center;
     align-items: center;
-    gap: 10px;
 
     font-family: var(--secondFont);
     font-size: 18px;
