@@ -75,7 +75,7 @@ header > .navigation-area > nav > a:after {
 }
 
 /* Regras para telas menores (celulares) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 870px) {
     .burguer-menu {
         display: initial;
     }
@@ -88,9 +88,6 @@ header > .navigation-area > nav > a:after {
         display: none;
     }
 }
-
-/* Regras para telas médias (tablets) */
-@media screen and (min-width: 480px) and (max-width: 1024px) {}
 
 /* Regras para telas grandes (monitores) */
 @media screen and (min-width: 1025px) {}
