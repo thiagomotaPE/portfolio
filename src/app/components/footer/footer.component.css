@@ -48,8 +48,9 @@ nav > a > i:hover {
     letter-spacing: 2.5px;
     color: var(--lettersColor);
 }
+
 /* Regras para telas menores (celulares) */
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 480px) {
     footer {
         flex-direction: column;
         justify-content: center;
@@ -58,6 +59,13 @@ nav > a > i:hover {
         margin: 0px 0px;
         width: 99vw;
     }
+    .logo-area {
+        display: none;
+    }
+}
+
+/* Regras para telas médias (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
     .logo-area {
         display: none;
     }

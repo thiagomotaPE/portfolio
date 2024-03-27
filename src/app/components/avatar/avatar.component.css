@@ -68,6 +68,10 @@
     z-index: 1
 }
 
+.medium-avatar {
+    display: none;
+}
+
 .avatar-box label {
     background-color: var(--contrastColor);
     width: 90%;
@@ -84,3 +88,26 @@
       transform: rotate(360deg);
     }
 }
+
+@media screen and (max-width: 480px) {
+   
+}
+
+/* Regras para telas médias (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    .big-avatar {
+        display: none;
+    }
+    .medium-avatar {
+        display: initial;
+    }
+    .avatar-box i {
+        display: none;
+    }
+    .avatar-box label {
+        display: none;
+    }
+}
+
+/* Regras para telas grandes (monitores) */
+@media screen and (min-width: 1025px) {}

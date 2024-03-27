@@ -36,8 +36,13 @@ h1 span {
     cursor: context-menu;
 }
 
+
 h1 span:hover {
     color: var(--contrastColor);
+}
+
+#T {
+    color: var(--contrastColor);  
 }
 
 .function .icon {
@@ -97,3 +102,15 @@ h1 span:hover {
         width: calc(100% + 8px);
     }
 }
+
+@media screen and (max-width: 480px) {
+  h1 span {
+    font-size: 4rem;
+  }
+}
+
+/* Regras para telas médias (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {}
+
+/* Regras para telas grandes (monitores) */
+@media screen and (min-width: 1025px) {}
