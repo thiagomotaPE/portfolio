@@ -1,0 +1,25 @@
+.loading-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--lettersColor);
+    width: 100vw;
+    height: 100vh;
+}
+img {
+    width: 100px;
+    height: 100px;
+    animation: loading 1s ease-in-out infinite alternate;
+}
+
+@keyframes loading {
+    0% {
+        transform: scale(1);
+    }
+    
+    100% {
+    transform: scale(1.2);
+    }
+}

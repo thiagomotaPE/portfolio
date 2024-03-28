@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { SaudationComponent } from '../../components/saudation/saudation.component';
 import { RouterModule } from '@angular/router';
 import { SocialMidiasComponent } from '../../components/social-midias/social-midias.component';
@@ -10,6 +10,7 @@ import { ResumeComponent } from '../../components/resume/resume.component';
 import { HardSkillComponent } from '../../components/hard-skills/hard-skill.component';
 import { OptionsWindowComponent } from '../../components/options-window/options-window.component';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
+import { LoadComponent } from '../../components/load/load.component';
 
 @Component({
     selector: 'app-home',
@@ -18,6 +19,7 @@ import { ProjectCardComponent } from '../../components/project-card/project-card
     styleUrl: './home.component.css',
     imports: [
         RouterModule,
+        LoadComponent,
         SaudationComponent, 
         SocialMidiasComponent, 
         ButtonComponent, 
@@ -37,5 +39,4 @@ export class HomeComponent {
         "fa-brands fa-dev",
         "fa-brands fa-square-instagram",
     ]
-
 }
