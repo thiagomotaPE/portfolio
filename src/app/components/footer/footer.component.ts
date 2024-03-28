@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { SocialMidiasComponent } from '../social-midias/social-midias.component';
 
 @Component({
@@ -9,10 +9,5 @@ import { SocialMidiasComponent } from '../social-midias/social-midias.component'
   styleUrl: './footer.component.css'
 })
 export class FooterComponent {
-  icons: string[] = [
-    "fa-brands fa-linkedin-in",
-    "fa-brands fa-github",
-    "fa-brands fa-dev",
-    "fa-solid fa-at",
-  ]
+  @Input() copyright: string = "Copyright 2024 © Thiago Mota";
 }

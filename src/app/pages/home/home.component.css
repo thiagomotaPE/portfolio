@@ -31,23 +31,20 @@
     justify-content: center;
     height: 100vh;
 }
-
 .about-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     margin: 0% 9%;
-    margin-top: 6%;
+    margin-top: 7%;
 }
-
 .perfil-photo {
     margin-right: 30px;
 }
-
 .skills {
     margin: 0% 10%;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 .skills-title {
     font-family: 'Bebas Neue';
@@ -60,17 +57,18 @@
     margin-left: 2%;
 }
 
-
-
-
-
 .projects {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
-
-    background-color: green;
 }
+
+
+
+
+
+
 
 .experience {
     display: flex;
@@ -91,7 +89,6 @@
         flex-direction: column;
         margin: 0% 5%;
         text-align: center;
-
     }
     .perfil-photo {
         margin-right: 0px;
