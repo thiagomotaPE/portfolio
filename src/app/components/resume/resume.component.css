@@ -1,0 +1,30 @@
+.apresentation {
+    width: 75%;
+}
+
+.title-description {
+    font-family: 'Poppins';
+    font-size: 1.6rem;
+    font-weight: normal;
+    letter-spacing: 2.5px;
+    color: var(--contrastColor);
+
+    margin-left: 10px;
+}
+
+.catchphrase {
+    font-family: 'Bebas Neue';
+    font-weight: normal;
+    font-size: 2.6rem;
+    letter-spacing: 2.5px;
+    color: var(--lettersColor);
+}
+
+.text-description {
+    font-family: 'Poppins';
+    font-weight: normal;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+
+    color: var(--lettersColor);
+} 

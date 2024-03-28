@@ -27,94 +27,41 @@
 
 .about {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
-
-    background-color: blue;
 }
 
-/* .about > .about-content {
+.about-content {
     display: flex;
     flex-direction: row;
-    margin-top: 8%;
-
-    width: 80%;
-    height: 60%;
+    justify-content: center;
+    align-items: center;
+    margin: 5% 11%;
+ 
+    background-color: green;
 }
 
-.about > .about-content > .perfil-photo img {
-    width: 350px;
-    height: 350px;
-    margin: 20px;
-  
-
-    border: 2px solid var(--contrastColor);
-    border-radius: 15px;
+.perfil-photo {
+    margin-right: 30px;
 }
 
-.about > .about-content .description {
-    width: 100%;
-    padding-left: 10px;
-}
-
-.about > .about-content > .description > .apresentation .title-description {
-    font-family: 'Poppins';
-    font-size: 1.8rem;
-    font-weight: normal;
-    letter-spacing: 2.5px;
-    color: var(--contrastColor);
-
-    margin-left: 10px;
-}
-
-.about > .about-content > .description > .apresentation .catchphrase {
-    font-family: 'Bebas Neue';
-    font-weight: normal;
-    font-size: 3rem;
-    letter-spacing: 2.5px;
-    color: var(--lettersColor);
-}
-
-.about > .about-content > .description > .apresentation .text-description {
-    font-family: 'Poppins';
-    font-weight: normal;
-    font-size: 1.6rem;
-    letter-spacing: 3px;
-
-    color: var(--lettersColor);
-} 
-
-.about > .about-content > .description .skills {
+/* .skills {
     position: absolute;
     left: 13%;
 }
 
-.about > .about-content > .description > .skills .skills-title {
+.skills-title {
     font-family: 'Bebas Neue';
     font-weight: normal;
     font-size: 2.5rem;
     letter-spacing: 2.5px;
     color: var(--lettersColor);
-}
-
-.about > .about-content > .description > .skills > .skills-group {
-    width: 70%;
-    height: 30%;
-}
-
-.about > .about-content > .description > .skills > .skills-group .skills-item {
-    margin: 2.5px;
-    padding: 5px;
-
-    font-family: 'Poppins';
-    font-size: 1rem;
-    letter-spacing: 2.5px;
-    color: var(--contrastColor);
-
-    border: 1px solid var(--contrastColor);
-    border-radius: 5px;
-
 } */
+
+
+
+
 
 .projects {
     display: flex;

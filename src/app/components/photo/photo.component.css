@@ -1,0 +1,6 @@
+img {
+    width: 250px;
+    height: 320px;
+    border: 2px solid var(--contrastColor);
+    border-radius: 15px;
+}

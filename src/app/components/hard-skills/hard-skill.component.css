@@ -1,0 +1,18 @@
+.skills-group {
+    width: 70%;
+    height: 30%;
+}
+
+.skills-group .skills-item {
+    margin: 2.5px;
+    padding: 5px;
+
+    font-family: 'Poppins';
+    font-size: 1rem;
+    letter-spacing: 2.5px;
+    color: var(--contrastColor);
+
+    border: 1px solid var(--contrastColor);
+    border-radius: 5px;
+
+}
