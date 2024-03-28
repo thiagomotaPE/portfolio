@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-options-window',
@@ -9,6 +9,10 @@ import { Component } from '@angular/core';
   styleUrl: './options-window.component.css'
 })
 export class OptionsWindowComponent {
+  @Input() title!: string;
+  @Input() option1!: string;
+  @Input() option2!: string;
+  
   isDropdownOpen: boolean = false;
 
   toggleDropdown() {

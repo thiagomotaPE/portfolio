@@ -87,6 +87,7 @@
 
 .experience {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 88vh;
 }
