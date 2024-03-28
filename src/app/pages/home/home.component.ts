@@ -8,6 +8,8 @@ import { FooterComponent } from '../../components/footer/footer.component';
 import { PhotoComponent } from '../../components/photo/photo.component';
 import { ResumeComponent } from '../../components/resume/resume.component';
 import { HardSkillComponent } from '../../components/hard-skills/hard-skill.component';
+import { OptionsWindowComponent } from '../../components/options-window/options-window.component';
+import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 
 @Component({
     selector: 'app-home',
@@ -23,7 +25,9 @@ import { HardSkillComponent } from '../../components/hard-skills/hard-skill.comp
         FooterComponent,
         PhotoComponent,
         ResumeComponent,
-        HardSkillComponent
+        HardSkillComponent,
+        OptionsWindowComponent,
+        ProjectCardComponent
     ]
 })
 export class HomeComponent {

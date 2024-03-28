@@ -1,0 +1,11 @@
+<div class="menu" (click)="toggleDropdown()">
+    <div class="menu-option">
+        <span>Projetos</span>
+        <i class="fa-solid fa-angle-down"></i>
+    </div>
+    <div class="dropdown" *ngIf="isDropdownOpen">
+      <a href="#" class="dropdown-item">Projetos Reais</a>
+      <hr>
+      <a href="#" class="dropdown-item">Projetos de Estudo</a>
+    </div>
+</div>
