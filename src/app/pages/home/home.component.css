@@ -37,27 +37,28 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 5% 11%;
- 
-    background-color: green;
+    margin: 0% 9%;
+    margin-top: 6%;
 }
 
 .perfil-photo {
     margin-right: 30px;
 }
 
-/* .skills {
-    position: absolute;
-    left: 13%;
+.skills {
+    margin: 0% 10%;
+    margin-top: 5px;
 }
-
 .skills-title {
     font-family: 'Bebas Neue';
     font-weight: normal;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
     letter-spacing: 2.5px;
     color: var(--lettersColor);
-} */
+}
+.skills-items {
+    margin-left: 2%;
+}
 
 
 
@@ -84,6 +85,17 @@
     }
     .avatar {
         display: none;
+    }
+
+    .about-content {
+        flex-direction: column;
+        margin: 0% 5%;
+        text-align: center;
+
+    }
+    .perfil-photo {
+        margin-right: 0px;
+        margin-bottom: 2%;
     }
 }
 

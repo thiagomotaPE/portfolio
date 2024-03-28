@@ -1,6 +1,20 @@
 img {
-    width: 250px;
-    height: 320px;
+    width: 230px;
+    height: 290px;
     border: 2px solid var(--contrastColor);
     border-radius: 15px;
 }
+
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 480px) {}
+
+/* Regras para telas médias (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+    img {
+        width: 200px;
+        height: 270px;
+    }
+}
+
+/* Regras para telas grandes (monitores) */
+@media screen and (min-width: 1025px) {}

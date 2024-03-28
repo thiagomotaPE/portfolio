@@ -1,6 +1,7 @@
 .skills-group {
-    width: 70%;
-    height: 30%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .skills-group .skills-item {
@@ -11,8 +12,6 @@
     font-size: 1rem;
     letter-spacing: 2.5px;
     color: var(--contrastColor);
-
     border: 1px solid var(--contrastColor);
     border-radius: 5px;
-
 }

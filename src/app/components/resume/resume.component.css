@@ -1,7 +1,3 @@
-.apresentation {
-    width: 75%;
-}
-
 .title-description {
     font-family: 'Poppins';
     font-size: 1.6rem;
@@ -28,3 +24,32 @@
 
     color: var(--lettersColor);
 } 
+
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 480px) {
+    .title-description {
+        font-size: 1.1rem;
+    }
+    .catchphrase {
+        font-size: 1.5rem;
+    }
+    .text-description {
+        font-size: 1rem;
+    }
+}
+
+/* Regras para telas médias (tablets) */
+@media screen and (min-width: 481px) and (max-width: 1040px) {
+    .title-description {
+        font-size: 1.3rem;
+    }
+    .catchphrase {
+        font-size: 2rem;
+    }
+    .text-description {
+        font-size: 1rem;
+    }
+}
+
+/* Regras para telas grandes (monitores) */
+@media screen and (min-width: 1025px) {}
