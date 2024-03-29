@@ -1,0 +1,45 @@
+.card {
+    max-width: 430px;
+    min-width: 330px;
+    background-color: var(--backgroundColor2);
+    box-shadow: 10px 9px 0px 0px var(--shadow);
+}
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px 15px 0px 20px;
+}
+h3 {
+    font-family: var(--firstFont);
+    font-weight: normal;
+    font-size: 1.7rem;
+    letter-spacing: 3px;
+    color: #F8F0FB;
+    width: 90%;
+}
+.link a {
+    margin: 5px;
+}
+i {
+    color: #F8F0FB; 
+    font-size: 1.7rem;
+}
+.date {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    color: #F8F0FB;
+    font-family: var(--secondFont);
+    font-size: 12px;
+    letter-spacing: 2px;
+    padding: 0px 20px;
+}
+.date span {
+    margin: 0px 5px;
+}
+.tecnologies {
+    margin-top: 10px;
+    padding: 15px 0px 12px 15px;
+}

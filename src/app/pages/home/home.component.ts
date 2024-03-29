@@ -11,6 +11,7 @@ import { HardSkillComponent } from '../../components/hard-skills/hard-skill.comp
 import { OptionsWindowComponent } from '../../components/options-window/options-window.component';
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { LoadComponent } from '../../components/load/load.component';
+import { ExperienceCardComponent } from '../../components/experience-card/experience-card.component';
 
 @Component({
     selector: 'app-home',
@@ -29,7 +30,8 @@ import { LoadComponent } from '../../components/load/load.component';
         ResumeComponent,
         HardSkillComponent,
         OptionsWindowComponent,
-        ProjectCardComponent
+        ProjectCardComponent,
+        ExperienceCardComponent
     ]
 })
 export class HomeComponent {
@@ -170,6 +172,18 @@ export class HomeComponent {
         },
     ];
 
-    WorkExperienceDetails!: any[]
+    WorkExperienceDetails: any[] = [
+        {
+            id: 1,
+            name: 'Estagio em desenvolvimento web',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            tecnologies: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+            ]
+        },
+    ]
     StudyExperienceDetails!: any[]
 }
