@@ -172,8 +172,4 @@ export class HomeComponent {
 
     WorkExperienceDetails!: any[]
     StudyExperienceDetails!: any[]
-
-
-
-
 }
