@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { SaudationComponent } from '../../components/saudation/saudation.component';
 import { RouterModule } from '@angular/router';
 import { SocialMidiasComponent } from '../../components/social-midias/social-midias.component';
@@ -33,10 +33,147 @@ import { LoadComponent } from '../../components/load/load.component';
     ]
 })
 export class HomeComponent {
-    icons: string[] = [
-        "fa-brands fa-linkedin",
-        "fa-brands fa-square-github",
-        "fa-brands fa-dev",
-        "fa-brands fa-square-instagram",
+    mySkills: any[] = [
+        {name: "Nest.Js"},
+        {name: "Angular"},
+        {name: "Typescript"},
+        {name: "Javascript"},
+        {name: "React.Js"},
+        {name: "SpringBoot"},
+        {name: "Java"},
+        {name: "MySql"},
+        {name: "SQLite"},
+        {name: "Git"},
+        {name: "Docker"},
+        {name: "Insomnia"},
+        {name: "Figma"},
     ]
+
+    RealprojectDetails: any[] = [
+        {
+            id: 1,
+            name: 'Polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            tecnologies: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 2,
+            name: 'Extreme gym',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 3,
+            name: 'Mario run',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 4,
+            name: 'Portfolio',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+    ];
+    StudyprojectDetails: any[] = [
+        {
+            name: 'Projeto polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            name: 'Projeto polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            name: 'Projeto polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            name: 'Projeto polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+    ];
+
+    WorkExperienceDetails!: any[]
+    StudyExperienceDetails!: any[]
+
+
+
+
 }

@@ -7,7 +7,7 @@
             <app-button title="Baixar curriculo"></app-button>
         </div>
         <div class="social-midias">
-            <app-social-midias [icons]="icons"></app-social-midias>
+            <app-social-midias></app-social-midias>
         </div>
     </div>
     <div class="avatar">
@@ -27,7 +27,7 @@
     <div class="skills">
         <h3 class="skills-title">Skills</h3>
         <div class="skills-items">
-            <app-hard-skill></app-hard-skill>
+            <app-hard-skill [skills]="mySkills" size="1rem"></app-hard-skill>
         </div>
     </div>
 </section>
@@ -41,10 +41,9 @@
         <app-options-window title="Projetos" option1="Projetos reais" option2="Projetos de estudos"></app-options-window>
     </div>
     <div class="projects-content">
-        <app-project-card></app-project-card>
-        <app-project-card></app-project-card>
-        <app-project-card></app-project-card>
-        <app-project-card></app-project-card>
+        @for (detail of RealprojectDetails; track detail.id) {
+            <app-project-card [details]="detail"></app-project-card>
+        }
     </div>
 </section>
 

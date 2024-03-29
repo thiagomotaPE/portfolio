@@ -11,6 +11,7 @@
     --backgroundColor2: #3E3B3B;
     --backgroundColor3: #3E3B3B;
     --lettersColor: #F8F0FB;
+    --shadow: rgba(0, 0, 0, 0.2);
 
     /* fonts */
     --firstFont: 'Bebas Neue';
@@ -26,6 +27,7 @@
     --backgroundColor2: #3E3B3B;
     --backgroundColor3: #F8F0FB;
     --lettersColor: #252323;
+    --shadow: rgba(0, 0, 0, 0.2);
 
     /* fonts */
     --firstFont: 'Bebas Neue';

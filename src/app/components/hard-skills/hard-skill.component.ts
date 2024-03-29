@@ -9,19 +9,6 @@ import { Component, Input } from '@angular/core';
   styleUrl: './hard-skill.component.css'
 })
 export class HardSkillComponent {
-  @Input() skills: any[] = [
-    {name: "Nest.Js"},
-    {name: "Angular"},
-    {name: "Typescript"},
-    {name: "Javascript"},
-    {name: "React.Js"},
-    {name: "SpringBoot"},
-    {name: "Java"},
-    {name: "MySql"},
-    {name: "SQLite"},
-    {name: "Git"},
-    {name: "Docker"},
-    {name: "Insomnia"},
-    {name: "Figma"},
-  ];
+  @Input() skills!: any[];
+  @Input() size!: string;
 }
