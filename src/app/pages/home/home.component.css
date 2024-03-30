@@ -25,6 +25,7 @@
     margin-top: 50px;
 }
 
+
 .about {
     display: flex;
     flex-direction: column;
@@ -56,6 +57,8 @@
 .skills-items {
     margin-left: 2%;
 }
+
+
 
 .projects {
     display: flex;
@@ -89,12 +92,9 @@
 }
 .experience-type-menu {
     width: 99vw;
-    margin-top: 5%;
+    margin-top: 3%;
 }
 .fa-chevron-up {
-    /* position: absolute;
-    right: 49.4%;
-    margin-bottom: 18.9%; */
     text-align: center;
     margin-bottom: 1%;
     font-size: 18px;
@@ -132,6 +132,7 @@ app-experience-card:nth-child(odd) {
 app-experience-card:nth-child(even) {
     margin-left: 490px;
 }
+
 
 /* Regras para telas menores (celulares) */
 @media screen and (max-width: 480px) {
