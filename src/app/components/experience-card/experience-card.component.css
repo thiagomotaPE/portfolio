@@ -1,8 +1,18 @@
 .card {
-    max-width: 430px;
+    max-width: 410px;
     min-width: 330px;
     background-color: var(--backgroundColor2);
     box-shadow: 10px 9px 0px 0px var(--shadow);
+}
+.point {
+    position: absolute;
+    right: 49.4%;
+    width: 16px;
+    height: 16px;
+    background-color: var(--backgroundColor1);
+    border: 2px solid var(--contrastColor);
+    border-radius: 50%;
+    z-index: 4;
 }
 header {
     display: flex;
@@ -40,6 +50,6 @@ i {
     margin: 0px 5px;
 }
 .tecnologies {
-    margin-top: 10px;
+    margin-top: 3px;
     padding: 15px 0px 12px 15px;
 }

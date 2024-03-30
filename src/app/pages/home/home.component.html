@@ -51,6 +51,7 @@
     <div class="experience-type-menu">
         <app-options-window title="Experiência" option1="Trabalho" option2="Estudo"></app-options-window>
     </div>
+    <i class="fa-solid fa-chevron-up"></i>
     <div class="experience-content">
         @for (detail of WorkExperienceDetails; track detail.id) {
             <app-experience-card [details]="detail"></app-experience-card>

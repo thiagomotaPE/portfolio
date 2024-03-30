@@ -177,7 +177,20 @@ export class HomeComponent {
             id: 1,
             name: 'Estagio em desenvolvimento web',
             link: 'https://www.linkedin.com/feed/',
-            repository: 'https://github.com/thiagomotaPE/polls',
+            inicialDate: '01/12/2023',
+            finalDate: 'presente',
+            tecnologies: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+            ]
+        },
+        {
+            id: 2,
+            name: 'Estagio em desenvolvimento RPA',
+            link: 'https://www.linkedin.com/feed/',
+            inicialDate: '02/05/2023',
+            finalDate: '31/11/2023',
             tecnologies: [
                 {name: "Nest.Js"},
                 {name: "Angular"},
