@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './hard-skill.component.html',
-  styleUrl: './hard-skill.component.css'
+  styleUrl: './hard-skill.component.scss'
 })
 export class HardSkillComponent {
   @Input() skills!: any[];

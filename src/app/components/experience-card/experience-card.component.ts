@@ -7,7 +7,7 @@ import { HardSkillComponent } from '../hard-skills/hard-skill.component';
   standalone: true,
   imports: [CommonModule, HardSkillComponent],
   templateUrl: './experience-card.component.html',
-  styleUrl: './experience-card.component.css'
+  styleUrl: './experience-card.component.scss'
 })
 export class ExperienceCardComponent {
   constructor(){ return this;}

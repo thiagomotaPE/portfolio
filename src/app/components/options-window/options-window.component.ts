@@ -6,7 +6,7 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './options-window.component.html',
-  styleUrl: './options-window.component.css'
+  styleUrl: './options-window.component.scss'
 })
 export class OptionsWindowComponent {
   @Input() title!: string;

@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './theme-button.component.html',
-  styleUrl: './theme-button.component.css'
+  styleUrl: './theme-button.component.scss'
 })
 export class ThemeButtonComponent {
   public toggleTheme() {

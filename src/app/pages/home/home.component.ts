@@ -17,7 +17,7 @@ import { ExperienceCardComponent } from '../../components/experience-card/experi
     selector: 'app-home',
     standalone: true,
     templateUrl: './home.component.html',
-    styleUrl: './home.component.css',
+    styleUrl: './home.component.scss',
     imports: [
         RouterModule,
         LoadComponent,

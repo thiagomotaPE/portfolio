@@ -5,6 +5,6 @@ import { Component, Input } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './social-midias.component.html',
-  styleUrl: './social-midias.component.css'
+  styleUrl: './social-midias.component.scss'
 })
 export class SocialMidiasComponent {}
