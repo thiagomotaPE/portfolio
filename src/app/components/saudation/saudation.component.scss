@@ -8,41 +8,40 @@ p {
     line-height: normal;
     letter-spacing: 5px; 
     cursor: context-menu;
-}
 
-.label1 > .hi {
-    z-index: 2;
+    .hi {
+        z-index: 2;
+    }
 }
-
 .name {
     display: flex;
     flex-direction: row;
-}
 
-.name .last-name {
-    margin-left: 30px;
-}
+    h1 {
+        span {
+            font-family: var(--firstFont);
+            font-size: 7rem;
+            font-style: normal;
+            font-weight: 400;
+            letter-spacing: 15px;
+        
+            color: var(--lettersColor);
+        
+            transition: color 0.2s ease-in-out;
+            cursor: context-menu;
 
-h1 span {
-    font-family: var(--firstFont);
-    font-size: 7rem;
-    font-style: normal;
-    font-weight: 400;
-    letter-spacing: 15px;
+            &:hover {
+                color: var(--contrastColor);
+            }
+        }
+    }
+    .last-name {
+        margin-left: 30px;
 
-    color: var(--lettersColor);
-
-    transition: color 0.2s ease-in-out;
-    cursor: context-menu;
-}
-
-
-h1 span:hover {
-    color: var(--contrastColor);
-}
-
-#T {
-    color: var(--contrastColor);  
+        #T {
+            color: var(--contrastColor);  
+        }
+    }
 }
 
 .function .icon {
@@ -51,22 +50,21 @@ h1 span:hover {
 
 .function .function-span {
     position: relative;
-}
 
-.function .function-span::before{
-    content: '';
-    animation: words 40s infinite;
-}
-
-.function .function-span::after {
-    content: '';
-    background-color: var(--backgroundColor1);
-    position: absolute;
-    width: calc(100% + 8px);
-    height: 25px;
-    border-left: 2px solid var(--contrastColor);
-    right: -8px;
-    animation: cursor .8s infinite linear,typing 40s steps(34) infinite;
+    &::before{
+        content: '';
+        animation: words 40s infinite;
+    }
+    &::after {
+        content: '';
+        background-color: var(--backgroundColor1);
+        position: absolute;
+        width: calc(100% + 8px);
+        height: 25px;
+        border-left: 2px solid var(--contrastColor);
+        right: -8px;
+        animation: cursor .8s infinite linear,typing 40s steps(34) infinite;
+    }    
 }
 
 @keyframes cursor {

@@ -3,57 +3,54 @@
     display: inline-block;
     width: 55px;
     height: 25px;
-}
-  
-.switch .checkbox {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-  
-.slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: transparent;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-    box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25), 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
-    border: 2px solid var(--contrastColor);
-}
-  
-.slider:before {
-    position: absolute;
-    content: "";
-    height: 27px;
-    width: 27px;
-    right: 26px;
-    top: -3px;
-    background-color: var(--contrastColor);
-    box-shadow: 0px 0px 4.8px 2px rgba(0, 0, 0, 0.25) inset;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
-}
-  
+
+    .checkbox {
+        opacity: 0;
+        width: 0;
+        height: 0;
+    }
+    .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: transparent;
+        -webkit-transition: 0.4s;
+        transition: 0.4s;
+        box-shadow: 0px 4px 4px 2px rgba(0, 0, 0, 0.25), 5px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+        border: 2px solid var(--contrastColor);
+
+        &:before {
+            position: absolute;
+            content: "";
+            height: 27px;
+            width: 27px;
+            right: 26px;
+            top: -3px;
+            background-color: var(--contrastColor);
+            box-shadow: 0px 0px 4.8px 2px rgba(0, 0, 0, 0.25) inset;
+            -webkit-transition: 0.4s;
+            transition: 0.4s;
+        }
+    }
+} 
 .checkbox:checked + .slider {
     background-color: var(--background1);
-}
-  
-.checkbox:checked + .slider:before {
-    -webkit-transform: translateX(27px);
-    -ms-transform: translateX(27px);
-    transform: translateX(28px);
-}
-  
+
+    &:before {
+        -webkit-transform: translateX(27px);
+        -ms-transform: translateX(27px);
+        transform: translateX(28px);
+    }
+} 
 .slider.round {
     border-radius: 34px;
-}
-  
-.slider.round:before {
-    border-radius: 50%;
+
+    &:before {
+        border-radius: 50%;
+    }
 }
 
 @keyframes load89234 {

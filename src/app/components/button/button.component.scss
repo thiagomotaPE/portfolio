@@ -18,8 +18,8 @@ button {
     color: var(--lettersColor);
 
     transition: 0.2s ease-in-out;
-}
 
-button:hover {
-    background-color: var(--contrastColor);
+    &:hover {
+        background-color: var(--contrastColor);
+    }
 }
