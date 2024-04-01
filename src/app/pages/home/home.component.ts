@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { SaudationComponent } from '../../components/saudation/saudation.component';
 import { RouterModule } from '@angular/router';
 import { SocialMidiasComponent } from '../../components/social-midias/social-midias.component';
@@ -31,8 +31,9 @@ import { ExperienceCardComponent } from '../../components/experience-card/experi
         HardSkillComponent,
         OptionsWindowComponent,
         ProjectCardComponent,
-        ExperienceCardComponent
-    ]
+        ExperienceCardComponent,
+    ],
+    schemas: [CUSTOM_ELEMENTS_SCHEMA],//swiper
 })
 export class HomeComponent {
     mySkills: any[] = [
@@ -112,7 +113,82 @@ export class HomeComponent {
                 {name: "Insomnia"},
             ]
         },
-    ];
+        {
+            id: 1,
+            name: 'Polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            tecnologies: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 2,
+            name: 'Extreme gym',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 3,
+            name: 'Mario run',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 4,
+            name: 'Portfolio',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            skills: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+        {
+            id: 1,
+            name: 'Polls',
+            link: 'https://www.linkedin.com/feed/',
+            repository: 'https://github.com/thiagomotaPE/polls',
+            tecnologies: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+                {name: "MySql"},
+                {name: "Git"},
+                {name: "Docker"},
+                {name: "Insomnia"},
+            ]
+        },
+    ]
     StudyprojectDetails: any[] = [
         {
             name: 'Projeto polls',

@@ -36,11 +36,26 @@
     <div class="project-type-menu">
         <app-options-window title="Projetos" option1="Projetos reais" option2="Projetos de estudos"></app-options-window>
     </div>
-    <div class="projects-content">
+
+    <swiper-container
+        style="
+        --swiper-pagination-color: #FF570A;
+        --swiper-pagination-bullet-size: 10px;
+        --swiper-pagination-bullet-horizontal-gap: 6px;
+        /* --swiper-pagination-bottom: -10px; */
+        "
+        pagination="true" 
+        pagination-clickable="true" 
+        autoplay="true"
+        slides-per-view="2" 
+        grid-rows="2"
+    >
         @for (detail of RealprojectDetails; track detail.id) {
-            <app-project-card [details]="detail"></app-project-card>
+            <swiper-slide>
+                <app-project-card [details]="detail"></app-project-card>
+            </swiper-slide> 
         }
-    </div>
+    </swiper-container>
 </section>
 
 <section class="experience" id="experience">
