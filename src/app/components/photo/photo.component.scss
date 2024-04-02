@@ -6,10 +6,15 @@ img {
 }
 
 /* Regras para telas menores (celulares) */
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 680px) {
+    img {
+        width: 230px;
+        height: 270px;
+    }
+}
 
 /* Regras para telas médias (tablets) */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 681px) and (max-width: 1024px) {
     img {
         width: 200px;
         height: 270px;

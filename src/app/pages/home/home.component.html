@@ -55,6 +55,11 @@
             </swiper-slide> 
         }
     </swiper-container>
+    <div class="projects-container">
+        @for (detail of RealprojectDetails; track detail.id) {
+            <app-project-card [details]="detail"></app-project-card>
+        }
+    </div>
 </section>
 
 <section class="experience" id="experience">

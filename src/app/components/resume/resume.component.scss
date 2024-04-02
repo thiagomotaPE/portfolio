@@ -40,6 +40,19 @@
     }
 }
 
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 680px) {
+    .title-description {
+        font-size: 1.3rem;
+    }
+    .catchphrase {
+        font-size: 2rem;
+    }
+    .text-description {
+        font-size: 1rem;
+    }
+}
+
 /* Regras para telas médias (tablets) */
 @media screen and (min-width: 481px) and (max-width: 1040px) {
     .title-description {

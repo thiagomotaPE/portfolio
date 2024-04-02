@@ -31,3 +31,16 @@
         padding: 15px 0px 12px 15px;
     }
 }
+
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 680px) {
+    .card {
+        max-width: 330px;
+        min-width: 330px;
+        margin-bottom: 12px;
+
+        .tecnologies {
+            margin-top: 5px;
+        }
+    }
+}

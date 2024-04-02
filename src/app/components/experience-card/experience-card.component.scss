@@ -1,19 +1,11 @@
 .card {
     max-width: 410px;
     min-width: 410px;
+    min-height: 170px;
     margin-top: 30px;
     background-color: var(--backgroundColor2);
     box-shadow: 10px 9px 0px 0px var(--shadow);
 
-    .point {
-        margin: 0% 100%;
-        width: 16px;
-        height: 16px;
-        background-color: var(--backgroundColor1);
-        border: 2px solid var(--contrastColor);
-        border-radius: 50%;
-        z-index: 4;
-    }
     header {
         display: flex;
         flex-direction: row;
@@ -55,5 +47,19 @@
     .tecnologies {
         margin-top: 3px;
         padding: 15px 0px 12px 15px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .card {
+        max-width: 330px;
+        min-width: 330px;
+        margin-bottom: 12px;
+
+        header {
+            h3 {
+                width: 100%;
+            }
+        }
     }
 }

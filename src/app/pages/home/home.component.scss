@@ -90,6 +90,9 @@
             margin: 10px 0px 30px 10px;
         }
     }
+    .projects-container {
+        display: none;
+    }
 }
 
 .experience {
@@ -170,19 +173,30 @@
 }
 
 /* Regras para telas menores (celulares) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
     .home {
         text-align: center;
+        height: 70vh;
 
+        .saudation {
+            .saudation-content {
+                margin-top: 10%;
+            }
+            .social-midias {
+                margin-top: 60px;
+            }
+        }  
         .avatar {
             display: none;
         }
     }
-
     .about {
+        height: 130vh;
+
         .about-content {
             flex-direction: column;
             margin: 0% 5%;
+            margin-top: -10%;
             text-align: center;
     
             .perfil-photo {
@@ -190,16 +204,77 @@
                 margin-bottom: 2%;
             }
         }
+        .skills {
+            margin: 0% 5%;
+            .skills-title {
+                margin: 3% 5%;
+            }
+        }
+    }
+    .projects {
+        .project-type-menu {
+            margin-top: 20%;
+            margin-bottom: 5%;
+        }
+        swiper-container {
+            display: none;
+        }
+        .projects-container {
+            display: initial;
+            overflow: scroll;
+        }
+    }
+    .experience {
+        .experience-type-menu {
+            margin-top: -5%;
+            margin-bottom: 2%;
+        }
+        .fa-chevron-up {
+            text-align: start;
+            margin-bottom: -12px;
+            margin-right: 0%;
+            margin-left: 17px;
+        }
+        .experience-content {
+            app-experience-card:nth-child(odd) {
+                margin-right: 0px;
+                margin-left: 12px;
+                padding-right: 0px;
+                padding-left: 20px;
+                border-right: none;
+                border-left: 3px solid var(--contrastColor);
+                &::after {
+                    margin-left: -8.5%;
+                    margin-top: -30%;
+                    margin-bottom: 20%;
+                }
+            }
+            app-experience-card:nth-child(even) {
+                margin-left: 12px;
+                padding-left: 20px;
+                &::after {
+                    margin-left: -8.5%;
+                    margin-top: -30%;
+                    margin-bottom: 20%;
+                }
+                    
+            }
+        
+        }
     }
 }
 
 /* Regras para telas médias (tablets) */
-@media screen and (min-width: 481px) and (max-width: 1024px) {
+@media screen and (min-width: 681px) and (max-width: 1024px) {
     .home {
         justify-content: center;
-        
+        .saudation {
+            .saudation-content {
+                margin-top: -40%;
+            }
+        } 
         .avatar {
-            justify-content: end;
+            display: none;
         }
     }
 }

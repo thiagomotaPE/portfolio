@@ -12,18 +12,32 @@ header {
     position: fixed;
     top: 0;
     z-index: 100;
-}
 
-.burguer-menu {
-    display: none;
-    color: var(--lettersColor);
-    font-size: 26px;
+    .logo-area {
+        a {
+            text-decoration: none;
+        }
+    }
+    .navigation-area {
+        nav {
+            a {
+                font-family: var(--secondFont);
+                font-weight: 400;
+                font-size: 16px;
+                text-decoration: none;
+                letter-spacing: 2.5px;
+                color: var(--lettersColor);
+            
+                margin: 35px;
+                position: relative;
+            
+                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                transition-duration: 400ms;
+            }
+        } 
+    } 
 }
-
-.logo-area > a {
-    text-decoration: none;
-}
-
+    
 #logo {
     font-family: var(--firstFont);
     font-size: 48px;
@@ -38,28 +52,11 @@ header {
 .scrolled #logo {
     font-size: 38px;
 }
-
-.navigation-area > nav > a {
-    font-family: var(--secondFont);
-    font-weight: 400;
-    font-size: 16px;
-    text-decoration: none;
-    letter-spacing: 2.5px;
-    color: var(--lettersColor);
-
-    margin: 35px;
-    position: relative;
-
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 400ms;
-}
-
 header > .navigation-area > nav > a:focus:after,
 header > .navigation-area > nav > a:hover:after {
   width: 100%;
   left: 0%;
 }
-
 header > .navigation-area > nav > a:after {
     content: "";
     pointer-events: none;
@@ -75,17 +72,45 @@ header > .navigation-area > nav > a:after {
 }
 
 /* Regras para telas menores (celulares) */
-@media screen and (max-width: 870px) {
-    .burguer-menu {
-        display: initial;
-    }
+@media screen and (max-width: 680px) {
+    header {
+        justify-content: center;
+        padding: 10px;
+        margin: 20px 1.4%;
+        width: 97vw;
+        border-radius: 25px;
+        background: rgba(114, 114, 114, .2);
+        backdrop-filter: blur(10px);
 
-    .navigation-area > nav {
-        display: none;
+        .logo-area {
+            display: none;
+        }
+        .navigation-area {
+           nav {
+            a {
+                font-size: 13px;
+                letter-spacing: 2.3px;
+                margin: 6px;
+            }
+           }
+        }
+        .theme-area {
+            display: none;
+        }
     }
+}
 
-    .theme-area {
-        display: none;
+/* Regras para telas médias (tablets) */
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+    header {  
+        .navigation-area {
+            nav {
+                a {
+                    font-size: 14px;
+                    margin: 25px;
+                }
+            } 
+        } 
     }
 }
 

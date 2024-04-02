@@ -45,3 +45,10 @@ body {
     background-color: var(--backgroundColor1);
     overflow: hidden;
 }
+
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 680px) {
+    body {
+        overflow: auto;
+    }
+}
