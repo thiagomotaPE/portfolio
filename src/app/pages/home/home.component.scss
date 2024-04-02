@@ -69,16 +69,11 @@
     align-items: center;
     height: 100vh;
 
-    .project-type-menu {
-        width: 99vw;
-        margin-top: 3%;
-        z-index: 2;
-    }
-
     swiper-container {
         width: 72%;
         height: 76%;
         z-index: 1;
+        margin-top: 6%;
 
         swiper-slide {
             display: flex;
@@ -212,16 +207,13 @@
         }
     }
     .projects {
-        .project-type-menu {
-            margin-top: 20%;
-            margin-bottom: 5%;
-        }
         swiper-container {
             display: none;
         }
         .projects-container {
             display: initial;
             overflow: scroll;
+            margin-top: 20%;
         }
     }
     .experience {
