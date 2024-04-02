@@ -1,12 +1,11 @@
 .card {
     max-width: 410px;
-    min-width: 330px;
+    min-width: 410px;
     background-color: var(--backgroundColor2);
     box-shadow: 10px 9px 0px 0px var(--shadow);
 
     .point {
-        position: absolute;
-        right: 49.4%;
+        margin: 0% 100%;
         width: 16px;
         height: 16px;
         background-color: var(--backgroundColor1);
@@ -37,7 +36,6 @@
             }
         }
     }
-    
     .date {
         display: flex;
         flex-direction: row;
