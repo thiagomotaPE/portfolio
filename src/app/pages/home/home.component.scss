@@ -72,17 +72,22 @@
     .project-type-menu {
         width: 99vw;
         margin-top: 3%;
+        z-index: 2;
     }
 
     swiper-container {
         width: 72%;
-        height: 73%;
+        height: 76%;
+        z-index: 1;
 
         swiper-slide {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+            max-width: 430px;
+            max-height: 170px;
+            margin: 10px 0px 30px 10px;
         }
     }
 }
@@ -118,7 +123,7 @@
             width: 3px;
         }
         &::-webkit-scrollbar-thumb{
-            background-color: var(--contrastColor);
+            background-color: var(--backgroundColor2);
             height: 30px;
         }
         app-experience-card:nth-child(odd) {
