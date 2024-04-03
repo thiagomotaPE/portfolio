@@ -36,6 +36,7 @@ import { ExperienceCardComponent } from '../../components/experience-card/experi
     schemas: [CUSTOM_ELEMENTS_SCHEMA],//swiper
 })
 export class HomeComponent {
+    isWorkExperience: boolean = true;
     mySkills: any[] = [
         {name: "Nest.Js"},
         {name: "Angular"},
@@ -51,7 +52,6 @@ export class HomeComponent {
         {name: "Insomnia"},
         {name: "Figma"},
     ]
-
     projectDetails: any[] = [
         {
             id: 1,
@@ -206,8 +206,7 @@ export class HomeComponent {
             ]
         },
     ]
-
-    WorkExperienceDetails: any[] = [
+    workExperienceDetails: any[] = [
         {
             id: 1,
             name: 'Estagio em desenvolvimento web',
@@ -248,5 +247,48 @@ export class HomeComponent {
             ]
         },
     ]
-    StudyExperienceDetails!: any[]
+    coursesExperienceDetails: any[] = [
+        {
+            id: 1,
+            name: 'Nitro',
+            link: 'https://www.linkedin.com/feed/',
+            companyName: 'Escola Congenial',
+            inicialDate: '09/2023',
+            finalDate: 'presente',
+            tecnologies: [
+                {name: "Logica de programação"},
+                {name: "Algoritmos"},
+                {name: "Estrutura de dados"},,
+            ]
+        },
+        {
+            id: 2,
+            name: 'NWl Expert trilha de Node.js',
+            link: 'https://app.rocketseat.com.br/certificates/bd410e8a-c837-47f7-8c6c-f1673c230e33',
+            companyName: 'Rocketseat',
+            inicialDate: '02/2024',
+            finalDate: '02/2024',
+            tecnologies: [
+                {name: "Nest.Js"},
+                {name: "Angular"},
+                {name: "Typescript"},,
+            ]
+        },
+        {
+            id: 3,
+            name: 'Desenvolvimento frontend com Angular',
+            link: 'https://www.dio.me/certificate/AE330857/share',
+            companyName: 'Dio',
+            inicialDate: '12/2023',
+            finalDate: '12/2023',
+            tecnologies: [
+                {name: "Angular"},
+                {name: "Typescript"},,
+            ]
+        },
+    ]
+
+    toggleExperience(isWorkExperience: boolean) {
+        this.isWorkExperience = isWorkExperience;
+    }
 }

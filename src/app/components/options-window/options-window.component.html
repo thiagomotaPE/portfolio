@@ -4,8 +4,8 @@
         <i class="fa-solid fa-angle-down"></i>
     </div>
     <div class="dropdown" *ngIf="isDropdownOpen">
-      <a href="#" class="dropdown-item">{{ option1 }}</a>
+      <p (click)="selectOption('work')" class="dropdown-item">{{ option1 }}</p>
       <hr>
-      <a href="#" class="dropdown-item">{{ option2 }}</a>
+      <p (click)="selectOption('courses')" class="dropdown-item">{{ option2 }}</p>
     </div>
 </div>
