@@ -9,6 +9,9 @@ import { Component, Input } from '@angular/core';
   styleUrl: './hard-skill.component.scss'
 })
 export class HardSkillComponent {
+  constructor() {
+    return this;
+  }
   @Input() skills!: any[];
   @Input() size!: string;
 }

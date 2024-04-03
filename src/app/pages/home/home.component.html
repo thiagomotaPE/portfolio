@@ -46,14 +46,14 @@
         slides-per-view="2" 
         grid-rows="2"
     >
-        @for (detail of RealprojectDetails; track detail.id) {
+        @for (detail of projectDetails; track detail.id) {
             <swiper-slide>
                 <app-project-card [details]="detail"></app-project-card>
             </swiper-slide> 
         }
     </swiper-container>
     <div class="projects-container">
-        @for (detail of RealprojectDetails; track detail.id) {
+        @for (detail of projectDetails; track detail.id) {
             <app-project-card [details]="detail"></app-project-card>
         }
     </div>

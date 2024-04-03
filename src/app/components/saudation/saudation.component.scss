@@ -75,7 +75,7 @@ p {
 
 @keyframes words {
     0%,20%{
-        content: 'Software developer';
+        content: 'Desenvolvedor de software';
     }
     21%,40%{
         content: 'Desenvolvedor Fullstack';
@@ -115,6 +115,9 @@ p {
         .last-name {
             margin-left: 20px;
         }
+    }
+    .function .icon {
+        margin-right: 0px;
     }
 }
 
