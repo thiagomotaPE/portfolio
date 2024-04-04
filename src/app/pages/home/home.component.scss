@@ -257,16 +257,94 @@
 }
 
 /* Regras para telas médias (tablets) */
-@media screen and (min-width: 681px) and (max-width: 1024px) {
+@media screen and (min-width: 681px) and (max-width: 1000px) {
     .home {
-        justify-content: center;
         .saudation {
             .saudation-content {
-                margin-top: -40%;
+                margin-top: 0%;
             }
-        } 
+            .social-midias {
+                margin-top: 30px;
+            }
+        }  
         .avatar {
             display: none;
+        }
+    }
+    .about {
+        .about-content {
+            flex-direction: row;
+            margin: 0% 8%;
+            margin-top: 0%;
+    
+            .perfil-photo {
+                margin-right: 20px;
+                margin-bottom: 0%;
+            }
+        }
+        .skills {
+            margin: 2% 5%;
+            .skills-title {
+                margin: 1% 5%;
+            }
+        }
+    }
+    .projects {
+        swiper-container {
+            swiper-slide {
+                margin: 20px 0px 15px 0px;
+            }
+        }
+    }
+    .experience {
+        .experience-type-menu {
+            margin-top: 8%;
+            margin-bottom: 2%;
+        }
+        .fa-chevron-up {
+            text-align: start;
+            margin-bottom: -12px;
+            margin-left: 267px;
+        }
+        .experience-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            margin: 0% 5%;
+            overflow: hidden;
+            overflow-y: auto;
+    
+            &::-webkit-scrollbar{
+                background-color: var(--backgroundColor1);
+                width: 3px;
+            }
+            &::-webkit-scrollbar-thumb{
+                background-color: var(--backgroundColor2);
+                height: 30px;
+            }
+            app-experience-card:nth-child(odd) {
+                margin-right: 0px;
+                margin-left: 12px;
+                padding-right: 0px;
+                padding-left: 20px;
+                border-right: none;
+                border-left: 3px solid var(--contrastColor);
+                &::after {
+                    margin-left: -7%;
+                    margin-top: -22%;
+                    margin-bottom: 20%;
+                }
+            }
+            app-experience-card:nth-child(even) {
+                margin-left: 12px;
+                padding-left: 20px;
+                &::after {
+                    margin-left: -7%;
+                    margin-top: -22%;
+                    margin-bottom: 20%;
+                }      
+            } 
         }
     }
 }

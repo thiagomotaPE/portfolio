@@ -79,16 +79,13 @@
     }
 }
 
-@media screen and (max-width: 480px) {}
+@media screen and (max-width: 680px) {}
 
 /* Regras para telas médias (tablets) */
-@media screen and (min-width: 481px) and (max-width: 1024px) { 
+@media screen and (min-width: 681px) and (max-width: 1000px) { 
     .avatar-box {
         .big-avatar {
             display: none;
-        }
-        .medium-avatar {
-            display: initial;
         }
         label {
             display: none;

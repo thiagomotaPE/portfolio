@@ -115,7 +115,7 @@ export class HomeComponent {
         },
         {
             id: 5,
-            name: 'Crud - Springboot Java',
+            name: 'Crud Springboot',
             link: 'https://github.com/thiagomotaPE/CRUD-JavaSpring',
             repository: 'https://github.com/thiagomotaPE/CRUD-JavaSpring',
             tecnologies: [
