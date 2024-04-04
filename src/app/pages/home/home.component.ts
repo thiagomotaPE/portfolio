@@ -254,7 +254,7 @@ export class HomeComponent {
             link: 'https://www.linkedin.com/feed/',
             companyName: 'Escola Congenial',
             inicialDate: '09/2023',
-            finalDate: 'presente',
+            finalDate: '09/2024',
             tecnologies: [
                 {name: "Logica de programação"},
                 {name: "Algoritmos"},
@@ -269,9 +269,12 @@ export class HomeComponent {
             inicialDate: '02/2024',
             finalDate: '02/2024',
             tecnologies: [
-                {name: "Nest.Js"},
-                {name: "Angular"},
-                {name: "Typescript"},,
+                {name: "Node.js"},
+                {name: "Fastiy"},
+                {name: "Typescript"},
+                {name: "WebSockets"},
+                {name: "Redis"},
+                {name: "PostgreSql"},
             ]
         },
         {
@@ -283,7 +286,55 @@ export class HomeComponent {
             finalDate: '12/2023',
             tecnologies: [
                 {name: "Angular"},
-                {name: "Typescript"},,
+                {name: "Typescript"},
+            ]
+        },
+        {
+            id: 3,
+            name: 'Desenvolvimento frontend com Angular',
+            link: 'https://www.dio.me/certificate/AE330857/share',
+            companyName: 'Dio',
+            inicialDate: '12/2023',
+            finalDate: '12/2023',
+            tecnologies: [
+                {name: "Angular"},
+                {name: "Typescript"},
+            ]
+        },
+        {
+            id: 3,
+            name: 'Desenvolvimento frontend com Angular',
+            link: 'https://www.dio.me/certificate/AE330857/share',
+            companyName: 'Dio',
+            inicialDate: '12/2023',
+            finalDate: '12/2023',
+            tecnologies: [
+                {name: "Angular"},
+                {name: "Typescript"},
+            ]
+        },
+        {
+            id: 3,
+            name: 'Desenvolvimento frontend com Angular',
+            link: 'https://www.dio.me/certificate/AE330857/share',
+            companyName: 'Dio',
+            inicialDate: '12/2023',
+            finalDate: '12/2023',
+            tecnologies: [
+                {name: "Angular"},
+                {name: "Typescript"},
+            ]
+        },
+        {
+            id: 3,
+            name: 'Desenvolvimento frontend com Angular',
+            link: 'https://www.dio.me/certificate/AE330857/share',
+            companyName: 'Dio',
+            inicialDate: '12/2023',
+            finalDate: '12/2023',
+            tecnologies: [
+                {name: "Angular"},
+                {name: "Typescript"},
             ]
         },
     ]
