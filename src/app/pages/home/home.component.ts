@@ -40,6 +40,7 @@ export class HomeComponent {
     mySkills: any = [
         {name: "Nest.Js"},
         {name: "Angular"},
+        {name: "Node.js"},
         {name: "Typescript"},
         {name: "Javascript"},
         {name: "React.Js"},
@@ -79,7 +80,6 @@ export class HomeComponent {
                 {name: "PostgreSql"},
                 {name: "Redis"},
                 {name: "Docker"},
-                {name: "Insomnia"},
             ]
         },
         {
@@ -107,7 +107,6 @@ export class HomeComponent {
                 {name: "SQlite"},
                 {name: "Jwt"},
                 {name: "Docker"},
-                {name: "Insomnia"},
             ]
         },
         {
@@ -122,7 +121,6 @@ export class HomeComponent {
                 {name: "FlyAway migrations"},
                 {name: "JPA"},
                 {name: "PostgreSql"},
-                {name: "Insomnia"},
             ]
         },
         {
@@ -139,7 +137,6 @@ export class HomeComponent {
                 {name: "FlyAway migrations"},
                 {name: "JPA"},
                 {name: "PostgreSql"},
-                {name: "Insomnia"},
             ]
         },
         {

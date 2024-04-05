@@ -1,6 +1,9 @@
 .card {
-    max-width: 430px;
-    min-width: 330px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 430px;
+    height: 180px;
     background-color: var(--backgroundColor2);
     box-shadow: 10px 9px 0px 0px var(--shadow);
     
@@ -8,7 +11,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        padding: 15px 20px;
+        padding: 15px 20px 0px 20px;
     
         h3 {
             font-family: var(--firstFont);
@@ -27,7 +30,6 @@
         }
     }
     .tecnologies {
-        margin-top: 10px;
         padding: 15px 0px 12px 15px;
     }
 }
@@ -35,12 +37,11 @@
 /* Regras para telas menores (celulares) */
 @media screen and (max-width: 680px) {
     .card {
-        max-width: 350px;
-        min-width: 330px;
+        width: 350px;
         margin-bottom: 18px;
 
         .tecnologies {
-            margin-top: 5px;
+            margin-top: 0px;
         }
     }
 }
