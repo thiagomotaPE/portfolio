@@ -11,3 +11,15 @@ nav > a > i {
         transition: transform 250ms cubic-bezier(.3, .7, .4, 1.5);
     }
  }
+
+ /* Regras para telas menores (celulares) */
+@media screen and (max-width: 680px) {
+    nav {
+        a {
+            margin: 3%;
+            i {
+                margin-right: 0px; 
+            }
+        } 
+    } 
+}

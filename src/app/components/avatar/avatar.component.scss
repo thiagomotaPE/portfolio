@@ -79,13 +79,40 @@
     }
 }
 
-@media screen and (max-width: 680px) {}
+@media screen and (max-width: 680px) {
+    .avatar-box {
+        .code-icon {
+            display: none;
+        }
+        .branch-icon {
+            display: none;
+        }
+        .ghost-icon {
+            display: none;
+        }   
+        .asterisk-icon {
+            display: none;
+        }
+        .big-avatar {
+            display: none;
+        }
+        .medium-avatar {
+            display: initial;
+        }
+        label {
+            display: none;
+        }
+    }
+}
 
 /* Regras para telas médias (tablets) */
 @media screen and (min-width: 681px) and (max-width: 1000px) { 
     .avatar-box {
         .big-avatar {
             display: none;
+        }
+        .medium-avatar {
+            display: initial;
         }
         label {
             display: none;

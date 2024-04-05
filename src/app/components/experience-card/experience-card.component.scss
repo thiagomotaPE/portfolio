@@ -1,4 +1,7 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     max-width: 410px;
     min-width: 410px;
     min-height: 170px;
@@ -52,12 +55,16 @@
 
 @media screen and (max-width: 680px) {
     .card {
-        max-width: 330px;
-        min-width: 330px;
+        max-width: 300px;
+        min-width: 300px;
+        max-height: 160px;
+        min-height: 150px;
         margin-bottom: 12px;
 
         header {
             h3 {
+                font-size: 1.5rem;
+                letter-spacing: 2.7px;
                 width: 100%;
             }
         }

@@ -263,7 +263,7 @@ export class HomeComponent {
         },
         {
             id: 2,
-            name: 'NWl Expert trilha de Node.js',
+            name: 'NWl Expert trilha Node.js',
             link: 'https://app.rocketseat.com.br/certificates/bd410e8a-c837-47f7-8c6c-f1673c230e33',
             companyName: 'Rocketseat',
             inicialDate: '02/2024',
@@ -279,7 +279,7 @@ export class HomeComponent {
         },
         {
             id: 3,
-            name: 'Desenvolvimento frontend com Angular',
+            name: 'Desenvolvimento frontend Angular',
             link: 'https://www.dio.me/certificate/AE330857/share',
             companyName: 'Dio',
             inicialDate: '12/2023',
@@ -291,7 +291,7 @@ export class HomeComponent {
         },
         {
             id: 3,
-            name: 'Desenvolvimento frontend com Angular',
+            name: 'Desenvolvimento frontend Angular',
             link: 'https://www.dio.me/certificate/AE330857/share',
             companyName: 'Dio',
             inicialDate: '12/2023',
@@ -303,7 +303,7 @@ export class HomeComponent {
         },
         {
             id: 3,
-            name: 'Desenvolvimento frontend com Angular',
+            name: 'Desenvolvimento frontend Angular',
             link: 'https://www.dio.me/certificate/AE330857/share',
             companyName: 'Dio',
             inicialDate: '12/2023',
@@ -315,7 +315,7 @@ export class HomeComponent {
         },
         {
             id: 3,
-            name: 'Desenvolvimento frontend com Angular',
+            name: 'Desenvolvimento frontend Angular',
             link: 'https://www.dio.me/certificate/AE330857/share',
             companyName: 'Dio',
             inicialDate: '12/2023',
@@ -327,7 +327,7 @@ export class HomeComponent {
         },
         {
             id: 3,
-            name: 'Desenvolvimento frontend com Angular',
+            name: 'Desenvolvimento frontend Angular',
             link: 'https://www.dio.me/certificate/AE330857/share',
             companyName: 'Dio',
             inicialDate: '12/2023',

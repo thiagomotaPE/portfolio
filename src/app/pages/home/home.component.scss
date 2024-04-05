@@ -94,7 +94,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 88vh;
+    height: 85vh;
 
     .experience-type-menu {
         width: 99vw;
@@ -170,28 +170,28 @@
 /* Regras para telas menores (celulares) */
 @media screen and (max-width: 680px) {
     .home {
+        flex-direction: column;
         text-align: center;
-        height: 70vh;
 
         .saudation {
             .saudation-content {
                 margin-top: 10%;
             }
             .social-midias {
-                margin-top: 60px;
+                margin-top: 0px;
+                margin: 6% 15%;
             }
-        }  
+        }
         .avatar {
-            display: none;
+            margin-top: -20px;
         }
     }
     .about {
-        height: 130vh;
-
+        height: 110vh;
         .about-content {
             flex-direction: column;
             margin: 0% 5%;
-            margin-top: -10%;
+            margin-top: 10%;
             text-align: center;
     
             .perfil-photo {
@@ -207,25 +207,27 @@
         }
     }
     .projects {
+        height: 110vh;
         swiper-container {
             display: none;
         }
         .projects-container {
+
+            padding: 20px;
             display: initial;
             overflow: scroll;
-            margin-top: 20%;
+            margin-top: 18%;
         }
     }
     .experience {
         .experience-type-menu {
-            margin-top: -5%;
             margin-bottom: 2%;
         }
         .fa-chevron-up {
             text-align: start;
             margin-bottom: -12px;
             margin-right: 0%;
-            margin-left: 17px;
+            margin-left: 39px;
         }
         .experience-content {
             app-experience-card:nth-child(odd) {
@@ -236,8 +238,8 @@
                 border-right: none;
                 border-left: 3px solid var(--contrastColor);
                 &::after {
-                    margin-left: -8.5%;
-                    margin-top: -30%;
+                    margin-left: -9.5%;
+                    margin-top: -32%;
                     margin-bottom: 20%;
                 }
             }
@@ -245,8 +247,8 @@
                 margin-left: 12px;
                 padding-left: 20px;
                 &::after {
-                    margin-left: -8.5%;
-                    margin-top: -30%;
+                    margin-left: -9.5%;
+                    margin-top: -32%;
                     margin-bottom: 20%;
                 }
                     
@@ -267,9 +269,6 @@
                 margin-top: 30px;
             }
         }  
-        .avatar {
-            display: none;
-        }
     }
     .about {
         .about-content {

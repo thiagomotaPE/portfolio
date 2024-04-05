@@ -47,7 +47,6 @@ p {
 .function .icon {
     margin-right: 3px;
 }
-
 .function .function-span {
     position: relative;
 
@@ -102,10 +101,14 @@ p {
 }
 
 @media screen and (max-width:  680px) {
+    p {
+        margin-bottom: 10px;
+    }
     .label1 {
-        font-size: 16px;
+        font-size: 14px;
     }
     .name {  
+        margin: 0% 10%;
         h1 {
             span {
                 font-size: 3.5rem;
@@ -118,6 +121,10 @@ p {
     }
     .function .icon {
         margin-right: 0px;
+        font-size: 14px;
+    }
+    .function-span {
+       font-size: 14px; 
     }
 }
 

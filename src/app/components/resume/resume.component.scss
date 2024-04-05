@@ -43,13 +43,17 @@
 /* Regras para telas menores (celulares) */
 @media screen and (max-width: 680px) {
     .title-description {
-        font-size: 1.3rem;
+        font-size: 1.1rem;
+        margin-left: 0px;
     }
     .catchphrase {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        margin: 5px 0px;
     }
     .text-description {
-        font-size: 1rem;
+        font-size: 1.1rem;
+        text-align: left;
+        margin: 0% 4%;
     }
 }
 

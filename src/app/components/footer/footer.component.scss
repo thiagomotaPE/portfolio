@@ -12,17 +12,20 @@ footer {
     bottom: 0;
     z-index: 100;
 
-    nav > a > i {
-        margin-right: 20px;
-        font-size: 20px;
-        color: var(--lettersColor);
-     
-        transition: color 0.2s ease-in-out;
-    
-        &:hover {
-            color: var(--contrastColor);
-       }
-     }
+    nav {
+        margin-right: -18px;
+        a > i {
+            margin-right: 20px;
+            font-size: 20px;
+            color: var(--lettersColor);
+         
+            transition: color 0.2s ease-in-out;
+        
+            &:hover {
+                color: var(--contrastColor);
+           }
+        }
+    } 
     .logo-area > a {
         text-decoration: none;
     }
@@ -47,7 +50,7 @@ footer {
 }
 
 /* Regras para telas menores (celulares) */
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 680px) {
     footer {
         flex-direction: column;
         justify-content: center;
