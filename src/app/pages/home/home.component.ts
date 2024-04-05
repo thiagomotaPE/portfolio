@@ -206,7 +206,10 @@ export class HomeComponent {
             tecnologies: [
                 {name: "Nest.Js"},
                 {name: "Angular"},
-                {name: "Typescript"},,
+                {name: "Typescript"},
+                {name: "Docker"},
+                {name: "TypeORM"},
+                {name: "MySql"},
             ]
         },
         {
@@ -217,9 +220,9 @@ export class HomeComponent {
             inicialDate: '02/05/2023',
             finalDate: '31/11/2023',
             tecnologies: [
-                {name: "Nest.Js"},
-                {name: "Angular"},
-                {name: "Typescript"},,
+                {name: "IBM RPA STUDIO"},
+                {name: "TOTVS RM"},
+                {name: "Backoffice"},
             ]
         },
         {
@@ -230,9 +233,9 @@ export class HomeComponent {
             inicialDate: '01/12/2023',
             finalDate: '01/12/2023',
             tecnologies: [
-                {name: "Nest.Js"},
-                {name: "Angular"},
-                {name: "Typescript"},,
+                {name: "Comunicação"},
+                {name: "Proatividade"},
+                {name: "Satisfação do cliente"},
             ]
         },
     ]
@@ -247,7 +250,7 @@ export class HomeComponent {
             tecnologies: [
                 {name: "Logica de programação"},
                 {name: "Algoritmos"},
-                {name: "Estrutura de dados"},,
+                {name: "Estrutura de dados"},
             ]
         },
         {

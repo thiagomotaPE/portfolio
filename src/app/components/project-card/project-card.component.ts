@@ -11,12 +11,11 @@ import { CommonModule } from '@angular/common';
 })
 export class ProjectCardComponent implements OnInit {
   constructor(){ return this;}
-  
+
   @Input() details!: any;
   skills: any = []
 
   ngOnInit(): void {
     this.skills = this.details.tecnologies
-    console.log(this.skills)
   }
 }

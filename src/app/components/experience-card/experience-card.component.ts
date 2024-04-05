@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { HardSkillComponent } from '../hard-skills/hard-skill.component';
 
 @Component({
@@ -9,13 +9,13 @@ import { HardSkillComponent } from '../hard-skills/hard-skill.component';
   templateUrl: './experience-card.component.html',
   styleUrl: './experience-card.component.scss'
 })
-export class ExperienceCardComponent {
+export class ExperienceCardComponent implements OnInit {
   constructor(){ return this;}
 
   @Input() details!: any;
-  skills: any[] = [
-    {name: "Nest.Js"},
-    {name: "Angular"},
-    {name: "Typescript"},
-  ]
+  skills: any = []
+
+  ngOnInit(): void {
+    this.skills = this.details.tecnologies
+  }
 }
