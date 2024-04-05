@@ -1,4 +1,4 @@
-@if (skills.length) {
+@if (skills.length != 0) {
     <div class="skills-group">
         @for (skill of skills; track skill.name) {
             <span class="skills-item" [style.font-size]="size">{{ skill.name }}</span>

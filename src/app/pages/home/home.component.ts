@@ -37,7 +37,7 @@ import { ExperienceCardComponent } from '../../components/experience-card/experi
 })
 export class HomeComponent {
     isWorkExperience: boolean = true;
-    mySkills: any[] = [
+    mySkills: any = [
         {name: "Nest.Js"},
         {name: "Angular"},
         {name: "Typescript"},
@@ -52,7 +52,7 @@ export class HomeComponent {
         {name: "Insomnia"},
         {name: "Figma"},
     ]
-    projectDetails: any[] = [
+    projectDetails: any = [
         {
             id: 1,
             name: 'Portfolio',
@@ -62,7 +62,6 @@ export class HomeComponent {
                 {name: "Angular"},
                 {name: "Typescript"},
                 {name: "Sass"},
-                {name: "Git"},
             ]
         },
         {
@@ -70,7 +69,7 @@ export class HomeComponent {
             name: 'Polls',
             link: 'https://github.com/thiagomotaPE/polls',
             repository: 'https://github.com/thiagomotaPE/polls',
-            skills: [
+            tecnologies: [
                 {name: "Node.js"},
                 {name: "Fastify"},
                 {name: "Typescript"},
@@ -81,7 +80,6 @@ export class HomeComponent {
                 {name: "Redis"},
                 {name: "Docker"},
                 {name: "Insomnia"},
-                {name: "Git"},
             ]
         },
         {
@@ -89,11 +87,11 @@ export class HomeComponent {
             name: 'Mario run',
             link: 'https://github.com/thiagomotaPE/MarioRun-Desktop',
             repository: 'https://github.com/thiagomotaPE/MarioRun-Desktop',
-            skills: [
+            tecnologies: [
                 {name: "Electron.js"},
                 {name: "Javascript"},
                 {name: "Html"},
-                {name: "Css"},,
+                {name: "Css"},
             ]
         },
         {
@@ -101,14 +99,13 @@ export class HomeComponent {
             name: 'Cats',
             link: 'https://github.com/thiagomotaPE/cats',
             repository: 'https://github.com/thiagomotaPE/cats',
-            skills: [
+            tecnologies: [
                 {name: "Angular"},
                 {name: "Nest.Js"},
                 {name: "Typescript"},
                 {name: "TypeORM"},
                 {name: "SQlite"},
                 {name: "Jwt"},
-                {name: "Git"},
                 {name: "Docker"},
                 {name: "Insomnia"},
             ]
@@ -122,11 +119,10 @@ export class HomeComponent {
                 {name: "SpringBoot"},
                 {name: "Java"},
                 {name: "Api Rest"},
-                {name: "Migrations"},
+                {name: "FlyAway migrations"},
                 {name: "JPA"},
                 {name: "PostgreSql"},
                 {name: "Insomnia"},
-                {name: "Git"},
             ]
         },
         {
@@ -134,16 +130,15 @@ export class HomeComponent {
             name: 'Cardapio web',
             link: 'https://github.com/thiagomotaPE/cardapioWebApp',
             repository: 'https://github.com/thiagomotaPE/cardapioWebApp',
-            skills: [
+            tecnologies: [
                 {name: "React.js"},
                 {name: "Typescript"},
                 {name: "SpringBoot"},
                 {name: "Java"},
                 {name: "Api Rest"},
-                {name: "Migrations"},
+                {name: "FlyAway migrations"},
                 {name: "JPA"},
                 {name: "PostgreSql"},
-                {name: "Git"},
                 {name: "Insomnia"},
             ]
         },
@@ -152,7 +147,7 @@ export class HomeComponent {
             name: 'ResidentEvil 2D',
             link: 'https://github.com/thiagomotaPE/ResidentEvil2D',
             repository: 'https://github.com/thiagomotaPE/ResidentEvil2D',
-            skills: [
+            tecnologies: [
                 {name: "Java"},
                 {name: "Logica de programação"},
             ]
@@ -162,13 +157,12 @@ export class HomeComponent {
             name: 'Extreme gym',
             link: 'https://extreme-gym.vercel.app/',
             repository: 'https://github.com/thiagomotaPE/Extreme-Gym',
-            skills: [
+            tecnologies: [
                 {name: "React.js"},
                 {name: "Styled-components"},
                 {name: "Framer motion"},
                 {name: "Typescript"},
                 {name: "Mobile first"},
-                {name: "Git"},
             ]
         },
         {
@@ -186,11 +180,10 @@ export class HomeComponent {
             name: 'Calculadora',
             link: 'https://github.com/thiagomotaPE/Calculadora-ReactJs',
             repository: 'https://github.com/thiagomotaPE/Calculadora-ReactJs',
-            skills: [
+            tecnologies: [
                 {name: "React.js"},
                 {name: "Styled-components"},
                 {name: "Typescript"},
-                {name: "Git"},
             ]
         },
         {
@@ -198,15 +191,14 @@ export class HomeComponent {
             name: 'Projeto android',
             link: 'https://thiagomotape.github.io/projeto-android/',
             repository: 'https://github.com/thiagomotaPE/projeto-android',
-            skills: [
+            tecnologies: [
                 {name: "Html"},
                 {name: "Css"},
                 {name: "Responsividade"},
-                {name: "Git"},
             ]
         },
     ]
-    workExperienceDetails: any[] = [
+    workExperienceDetails: any = [
         {
             id: 1,
             name: 'Estagio em desenvolvimento web',
@@ -247,7 +239,7 @@ export class HomeComponent {
             ]
         },
     ]
-    coursesExperienceDetails: any[] = [
+    coursesExperienceDetails: any = [
         {
             id: 1,
             name: 'Nitro',

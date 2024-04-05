@@ -14,6 +14,8 @@
     </header>
 
     <div class="tecnologies">
-        <app-hard-skill [skills]="skills" size="0.8rem"></app-hard-skill>
+        @if (skills.length != 0) {
+            <app-hard-skill [skills]="skills" size="0.8rem"></app-hard-skill>
+        }
     </div>
 </div>

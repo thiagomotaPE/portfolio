@@ -12,6 +12,6 @@ export class HardSkillComponent {
   constructor() {
     return this;
   }
-  @Input() skills!: any[];
+  @Input() skills!: any;
   @Input() size!: string;
 }
