@@ -103,11 +103,21 @@ header > .navigation-area > nav > a:after {
 /* Regras para telas médias (tablets) */
 @media screen and (min-width: 681px) and (max-width: 1024px) {
     header {  
+        justify-content: space-between;
+        padding: 10px;
+        margin: 20px 1.3%;
+        width: 97vw;
+        border-radius: 25px;
+        background: rgba(114, 114, 114, .2);
+        backdrop-filter: blur(10px);
+
+        .logo-area {
+            display: none;
+        }
         .navigation-area {
             nav {
                 a {
-                    font-size: 14px;
-                    margin: 25px;
+                    margin: 20px;
                 }
             } 
         } 

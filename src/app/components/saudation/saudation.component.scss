@@ -129,7 +129,27 @@ p {
 }
 
 /* Regras para telas médias (tablets) */
-@media screen and (min-width: 681px) and (max-width: 1024px) {}
+@media screen and (min-width: 681px) and (max-width: 1024px) {
+    p {
+        margin-bottom: 10px;
+        margin-left: 8%;
+    }
+    .name {  
+        flex-wrap: wrap;
+        justify-content: start;
+        width: 50%;
+        margin-left: 8%;
+        h1 {
+            span {
+               font-size: 10rem;
+               letter-spacing: 18px; 
+            }
+        }
+        .last-name {
+            margin-left: 0px;
+        }
+    }
+}
 
 /* Regras para telas grandes (monitores) */
 @media screen and (min-width: 1025px) {}
