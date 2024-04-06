@@ -278,8 +278,8 @@
         .avatar {
             flex-direction: row;
             justify-content: end;
-            margin-top: 0px;
-            margin-right: 2%;
+            margin-top: -10%;
+            margin-right: 0%;
         } 
     }
     .about {
@@ -301,59 +301,41 @@
         }
     }
     .projects {
+        justify-content: start;
         swiper-container {
+            width: 90%;
+            height: 70%;
+            margin-top: 15%;
+
             swiper-slide {
-                margin: 20px 0px 15px 0px;
+                align-items: center;
+                width: 370px;
+                max-height: 185px;
             }
         }
     }
     .experience {
+        justify-content: start;
         .experience-type-menu {
-            margin-top: 8%;
+            margin-top: 6%;
             margin-bottom: 2%;
         }
-        .fa-chevron-up {
-            text-align: start;
-            margin-bottom: -12px;
-            margin-left: 267px;
-        }
         .experience-content {
-            display: flex;
-            flex-direction: column;
-            justify-content: start;
-            align-items: center;
-            margin: 0% 5%;
-            overflow: hidden;
-            overflow-y: auto;
-    
-            &::-webkit-scrollbar{
-                background-color: var(--backgroundColor1);
-                width: 3px;
-            }
-            &::-webkit-scrollbar-thumb{
-                background-color: var(--backgroundColor2);
-                height: 30px;
-            }
+            height: 100%;
             app-experience-card:nth-child(odd) {
-                margin-right: 0px;
-                margin-left: 12px;
-                padding-right: 0px;
-                padding-left: 20px;
-                border-right: none;
-                border-left: 3px solid var(--contrastColor);
+                margin-right: 350px;
                 &::after {
-                    margin-left: -7%;
-                    margin-top: -22%;
-                    margin-bottom: 20%;
+                    margin-left: 110.8%;
+                    margin-top: -40%;
+                    margin-bottom: 26%;
                 }
             }
             app-experience-card:nth-child(even) {
-                margin-left: 12px;
-                padding-left: 20px;
+                margin-left: 350px;
                 &::after {
-                    margin-left: -7%;
-                    margin-top: -22%;
-                    margin-bottom: 20%;
+                    margin-left: -15.8%;
+                    margin-top: -40%;
+                    margin-bottom: 26%;
                 }      
             } 
         }
