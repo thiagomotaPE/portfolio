@@ -1,0 +1,11 @@
+button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    width: 50px;
+    color: var(--lettersColor);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--firstFont);
+}
