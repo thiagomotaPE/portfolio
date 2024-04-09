@@ -35,11 +35,11 @@
     .ghost-icon {
         color: var(--lettersColor);
         filter: drop-shadow(0px 15px 2px rgba(0, 0, 0, 0.40));
-        cursor: pointer;
-    
+     
         transform: rotate(-15.263deg);
         right: 5%;
         top: 25%;
+        animation: ghost__animation 3s infinite;
     }   
     .asterisk-icon {
         color: var(--contrastColor3);
@@ -76,6 +76,15 @@
   
     100% {
       transform: rotate(360deg);
+    }
+}
+@keyframes ghost__animation {
+    0%, 100% {
+        transform: translateY(-2px) translateX(2px) rotateZ(2deg);
+    }
+
+    50% {
+        transform: translateY(2px) translateX(-2px) rotateZ(-2deg);
     }
 }
 
