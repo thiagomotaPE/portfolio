@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
 import { SaudationComponent } from '../../components/saudation/saudation.component';
 import { RouterModule } from '@angular/router';
 import { SocialMidiasComponent } from '../../components/social-midias/social-midias.component';
@@ -12,6 +12,7 @@ import { OptionsWindowComponent } from '../../components/options-window/options-
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { LoadComponent } from '../../components/load/load.component';
 import { ExperienceCardComponent } from '../../components/experience-card/experience-card.component';
+import * as data from '../../../database/data.json';
 
 @Component({
     selector: 'app-home',
@@ -35,303 +36,20 @@ import { ExperienceCardComponent } from '../../components/experience-card/experi
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],//swiper
 })
-export class HomeComponent {
+export class HomeComponent implements OnInit {
     isWorkExperience: boolean = true;
-    mySkills: any = [
-        {name: "Nest.Js"},
-        {name: "Angular"},
-        {name: "Node.js"},
-        {name: "Typescript"},
-        {name: "Javascript"},
-        {name: "React.Js"},
-        {name: "SpringBoot"},
-        {name: "Java"},
-        {name: "MySql"},
-        {name: "SQLite"},
-        {name: "Git"},
-        {name: "Docker"},
-        {name: "Insomnia"},
-        {name: "Figma"},
-    ]
-    projectDetails: any = [
-        {
-            id: 1,
-            name: 'Portfolio',
-            link: 'https://github.com/thiagomotaPE/portfolio',
-            repository: 'https://github.com/thiagomotaPE/portfolio',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Typescript"},
-                {name: "Sass"},
-            ]
-        },
-        {
-            id: 2,
-            name: 'Polls',
-            link: 'https://github.com/thiagomotaPE/polls',
-            repository: 'https://github.com/thiagomotaPE/polls',
-            tecnologies: [
-                {name: "Node.js"},
-                {name: "Fastify"},
-                {name: "Typescript"},
-                {name: "Api rest"},
-                {name: "WebSockets"},
-                {name: "PrismaORM"},
-                {name: "PostgreSql"},
-                {name: "Redis"},
-                {name: "Docker"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Mario run',
-            link: 'https://github.com/thiagomotaPE/MarioRun-Desktop',
-            repository: 'https://github.com/thiagomotaPE/MarioRun-Desktop',
-            tecnologies: [
-                {name: "Electron.js"},
-                {name: "Javascript"},
-                {name: "Html"},
-                {name: "Css"},
-            ]
-        },
-        {
-            id: 4,
-            name: 'Cats',
-            link: 'https://github.com/thiagomotaPE/cats',
-            repository: 'https://github.com/thiagomotaPE/cats',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Nest.Js"},
-                {name: "Typescript"},
-                {name: "TypeORM"},
-                {name: "SQlite"},
-                {name: "Jwt"},
-                {name: "Docker"},
-            ]
-        },
-        {
-            id: 5,
-            name: 'Crud Springboot',
-            link: 'https://github.com/thiagomotaPE/CRUD-JavaSpring',
-            repository: 'https://github.com/thiagomotaPE/CRUD-JavaSpring',
-            tecnologies: [
-                {name: "SpringBoot"},
-                {name: "Java"},
-                {name: "Api Rest"},
-                {name: "FlyAway migrations"},
-                {name: "JPA"},
-                {name: "PostgreSql"},
-            ]
-        },
-        {
-            id: 6,
-            name: 'Cardapio web',
-            link: 'https://github.com/thiagomotaPE/cardapioWebApp',
-            repository: 'https://github.com/thiagomotaPE/cardapioWebApp',
-            tecnologies: [
-                {name: "React.js"},
-                {name: "Typescript"},
-                {name: "SpringBoot"},
-                {name: "Java"},
-                {name: "Api Rest"},
-                {name: "FlyAway migrations"},
-                {name: "JPA"},
-                {name: "PostgreSql"},
-            ]
-        },
-        {
-            id: 7,
-            name: 'ResidentEvil 2D',
-            link: 'https://github.com/thiagomotaPE/ResidentEvil2D',
-            repository: 'https://github.com/thiagomotaPE/ResidentEvil2D',
-            tecnologies: [
-                {name: "Java"},
-                {name: "Logica de programação"},
-            ]
-        },
-        {
-            id: 8,
-            name: 'Extreme gym',
-            link: 'https://extreme-gym.vercel.app/',
-            repository: 'https://github.com/thiagomotaPE/Extreme-Gym',
-            tecnologies: [
-                {name: "React.js"},
-                {name: "Styled-components"},
-                {name: "Framer motion"},
-                {name: "Typescript"},
-                {name: "Mobile first"},
-            ]
-        },
-        {
-            id: 9,
-            name: 'Pong mini game',
-            link: 'https://github.com/thiagomotaPE/Pong-miniGame',
-            repository: 'https://github.com/thiagomotaPE/Pong-miniGame',
-            tecnologies: [
-                {name: "Java"},
-                {name: "Logica de programação"},
-            ]
-        },
-        {
-            id: 10,
-            name: 'Calculadora',
-            link: 'https://github.com/thiagomotaPE/Calculadora-ReactJs',
-            repository: 'https://github.com/thiagomotaPE/Calculadora-ReactJs',
-            tecnologies: [
-                {name: "React.js"},
-                {name: "Styled-components"},
-                {name: "Typescript"},
-            ]
-        },
-        {
-            id: 11,
-            name: 'Projeto android',
-            link: 'https://thiagomotape.github.io/projeto-android/',
-            repository: 'https://github.com/thiagomotaPE/projeto-android',
-            tecnologies: [
-                {name: "Html"},
-                {name: "Css"},
-                {name: "Responsividade"},
-            ]
-        },
-    ]
-    workExperienceDetails: any = [
-        {
-            id: 1,
-            name: 'Estagio em desenvolvimento web',
-            link: 'https://www.linkedin.com/feed/',
-            companyName: 'Techno Ok',
-            inicialDate: '01/12/2023',
-            finalDate: 'presente',
-            tecnologies: [
-                {name: "Nest.Js"},
-                {name: "Angular"},
-                {name: "Typescript"},
-                {name: "Docker"},
-                {name: "TypeORM"},
-                {name: "MySql"},
-            ]
-        },
-        {
-            id: 2,
-            name: 'Estagio em desenvolvimento RPA',
-            link: 'https://www.linkedin.com/feed/',
-            companyName: 'Rede Damas Educacional',
-            inicialDate: '02/05/2023',
-            finalDate: '31/11/2023',
-            tecnologies: [
-                {name: "IBM RPA STUDIO"},
-                {name: "TOTVS RM"},
-                {name: "Backoffice"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Atendente de Loja',
-            link: 'https://www.linkedin.com/feed/',
-            companyName: 'Nene Mota doces e salgados',
-            inicialDate: '01/12/2023',
-            finalDate: '01/12/2023',
-            tecnologies: [
-                {name: "Comunicação"},
-                {name: "Proatividade"},
-                {name: "Satisfação do cliente"},
-            ]
-        },
-    ]
-    coursesExperienceDetails: any = [
-        {
-            id: 1,
-            name: 'Nitro',
-            link: 'https://www.linkedin.com/feed/',
-            companyName: 'Escola Congenial',
-            inicialDate: '09/2023',
-            finalDate: '09/2024',
-            tecnologies: [
-                {name: "Logica de programação"},
-                {name: "Algoritmos"},
-                {name: "Estrutura de dados"},
-            ]
-        },
-        {
-            id: 2,
-            name: 'NWl Expert trilha Node.js',
-            link: 'https://app.rocketseat.com.br/certificates/bd410e8a-c837-47f7-8c6c-f1673c230e33',
-            companyName: 'Rocketseat',
-            inicialDate: '02/2024',
-            finalDate: '02/2024',
-            tecnologies: [
-                {name: "Node.js"},
-                {name: "Fastiy"},
-                {name: "Typescript"},
-                {name: "WebSockets"},
-                {name: "Redis"},
-                {name: "PostgreSql"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Desenvolvimento frontend Angular',
-            link: 'https://www.dio.me/certificate/AE330857/share',
-            companyName: 'Dio',
-            inicialDate: '12/2023',
-            finalDate: '12/2023',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Typescript"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Desenvolvimento frontend Angular',
-            link: 'https://www.dio.me/certificate/AE330857/share',
-            companyName: 'Dio',
-            inicialDate: '12/2023',
-            finalDate: '12/2023',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Typescript"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Desenvolvimento frontend Angular',
-            link: 'https://www.dio.me/certificate/AE330857/share',
-            companyName: 'Dio',
-            inicialDate: '12/2023',
-            finalDate: '12/2023',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Typescript"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Desenvolvimento frontend Angular',
-            link: 'https://www.dio.me/certificate/AE330857/share',
-            companyName: 'Dio',
-            inicialDate: '12/2023',
-            finalDate: '12/2023',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Typescript"},
-            ]
-        },
-        {
-            id: 3,
-            name: 'Desenvolvimento frontend Angular',
-            link: 'https://www.dio.me/certificate/AE330857/share',
-            companyName: 'Dio',
-            inicialDate: '12/2023',
-            finalDate: '12/2023',
-            tecnologies: [
-                {name: "Angular"},
-                {name: "Typescript"},
-            ]
-        },
-    ]
+    mySkills!: any;
+    projectDetails!: any;
+    workExperienceDetails!: any;
+    coursesExperienceDetails!: any;
 
     toggleExperience(isWorkExperience: boolean) {
         this.isWorkExperience = isWorkExperience;
+    }
+    ngOnInit(): void {
+        this.mySkills = data.skills;
+        this.projectDetails = data.projects;
+        this.workExperienceDetails = data.workExperiences;
+        this.coursesExperienceDetails = data.coursesExperiences;
     }
 }
