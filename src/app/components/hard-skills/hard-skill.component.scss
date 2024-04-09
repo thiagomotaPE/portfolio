@@ -12,5 +12,10 @@
         color: var(--contrastColor);
         border: 1px solid var(--contrastColor);
         border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+            filter: contrast(1.3);
+        }
     }
 }
