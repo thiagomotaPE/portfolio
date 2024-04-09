@@ -13,10 +13,15 @@ import { LanguageButtonComponent } from '../language-button/language-button.comp
 })
 export class HeaderComponent {
   isScrolled = false;
+  selectedOption: number | null = null;
   constructor(private renderer: Renderer2) { }
 
   @HostListener('window:scroll', ['$event'])
   onWindowScroll(event:any) {
     this.isScrolled = window.scrollY > 50;
+  }
+
+  selectOption(option: number) {
+    this.selectedOption = option;
   }
 }

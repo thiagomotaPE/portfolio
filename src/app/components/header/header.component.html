@@ -7,10 +7,10 @@
 
     <div class="navigation-area">
         <nav>
-            <a href="#home">Inicio</a>
-            <a href="#about">Sobre mim</a>
-            <a href="#projects">Projetos</a>
-            <a href="#experience">Experiencia</a>
+            <a href="#home" (click)="selectOption(1)" [class.active]="selectedOption === 1">Inicio</a>
+            <a href="#about" (click)="selectOption(2)" [class.active]="selectedOption === 2">Sobre mim</a>
+            <a href="#projects" (click)="selectOption(3)" [class.active]="selectedOption === 3">Projetos</a>
+            <a href="#experience" (click)="selectOption(4)" [class.active]="selectedOption === 4">Experiencia</a>
         </nav>
     </div>
 
