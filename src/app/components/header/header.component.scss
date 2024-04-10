@@ -108,14 +108,14 @@ header > .navigation-area > nav > a:after {
             }
            }
         }
-        .theme-area {
+        .settings-area {
             display: none;
         }
     }
 }
 
 /* Regras para telas médias (tablets) */
-@media screen and (min-width: 781px) and (max-width: 1024px) {
+@media screen and (min-width: 681px) and (max-width: 1024px) {
     header {  
         justify-content: space-between;
         padding: 10px;
