@@ -38,15 +38,11 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin: 0% 12%;
+        margin: 0% 15%;
         margin-top: 6%;
-
-        .perfil-photo {
-            margin-right: 30px;
-        }
     }
     .skills {
-        margin: 0% 10%;
+        margin: 0% 13%;
         margin-top: 20px;
 
         .skills-title {
@@ -179,28 +175,23 @@
             }
             .social-midias {
                 margin-top: 0px;
-                margin: 6% 15%;
+                margin: 4% 15%;
             }
         }
         .avatar {
-            margin-top: -20px;
+            margin-top: 0px;
         }
     }
     .about {
-        height: 110vh;
+        height: 100vh;
         .about-content {
             flex-direction: column;
             margin: 0% 5%;
-            margin-top: 10%;
+            margin-top: 0%;
             text-align: center;
-    
-            .perfil-photo {
-                margin-right: 0px;
-                margin-bottom: 2%;
-            }
         }
         .skills {
-            margin: 0% 5%;
+            margin: 2% 5%;
             .skills-title {
                 margin: 3% 5%;
             }
