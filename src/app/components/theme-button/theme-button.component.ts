@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-theme-button',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './theme-button.component.scss'
 })
 export class ThemeButtonComponent {
+  @Input() title!: string;
   public toggleTheme() {
     const theme = document.body.classList.toggle('light-theme');
   }

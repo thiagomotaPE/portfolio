@@ -1,0 +1,36 @@
+{
+    "header": {
+        "option1": "Inicio",
+        "option2": "Sobre mim",
+        "option3": "Projetos",
+        "option4": "Experiência",
+        "themeTitle": "Mudar tema"
+    },
+    "home": {
+        "saudation": "Ola 👋, meu nome é",
+        "button": "Baixar curriculo",
+        "buttonTitle": "Baixar curriculo",
+        "avatarAlt": "Avatar estilo pixar de Thiago Mota"
+    },
+    "about": {
+        "title": "Qual é a minha missão?",
+        "catchphrase": "impactar positivamente a vida das pessoas através da tecnologia",
+        "resume1": " Minha jornada como desenvolvedor é mais do que uma carreira; é uma busca constante por maneiras de",
+        "resume2": "  fazer a diferença",
+        "resume3": ". Confira meu portfólio e veja como estou utilizando a tecnologia para",
+        "resume4": " transformar vidas",
+        "titleHabilities": "Habilidades"
+    },
+    "projects": {
+        "icon1Title": "Repositorio do projeto",
+        "icon2Title": "Implementação do projeto"
+    },
+    "experience": {
+        "windowOption": "Experiência",
+        "option1": "Trabalho",
+        "option2": "Estudo"
+    },
+    "footer": {
+        "iconCvTitle": "Baixe o meu curriculo"
+    }
+}

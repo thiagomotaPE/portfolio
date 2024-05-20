@@ -10,10 +10,10 @@ import { CommonModule } from '@angular/common';
   styleUrl: './project-card.component.scss'
 })
 export class ProjectCardComponent implements OnInit {
-  constructor(){ return this;}
-
   @Input() details!: any;
+  @Input() texts: any;
   skills: any = []
+  constructor(){ return this;}
 
   ngOnInit(): void {
     this.skills = this.details.tecnologies

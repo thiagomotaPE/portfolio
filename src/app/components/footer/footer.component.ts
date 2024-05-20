@@ -10,4 +10,5 @@ import { SocialMidiasComponent } from '../social-midias/social-midias.component'
 })
 export class FooterComponent {
   @Input() copyright: string = "Copyright 2024 © Thiago Mota";
+  @Input() texts: any;
 }

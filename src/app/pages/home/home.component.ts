@@ -1,4 +1,4 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA, OnInit } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, OnDestroy, OnInit } from '@angular/core';
 import { SaudationComponent } from '../../components/saudation/saudation.component';
 import { RouterModule } from '@angular/router';
 import { SocialMidiasComponent } from '../../components/social-midias/social-midias.component';
@@ -12,7 +12,8 @@ import { OptionsWindowComponent } from '../../components/options-window/options-
 import { ProjectCardComponent } from '../../components/project-card/project-card.component';
 import { LoadComponent } from '../../components/load/load.component';
 import { ExperienceCardComponent } from '../../components/experience-card/experience-card.component';
-import * as data from '../../../database/data.json';
+import { DataService } from '../../services/data/data.service';
+import { Subscription } from 'rxjs';
 
 @Component({
     selector: 'app-home',
@@ -36,20 +37,31 @@ import * as data from '../../../database/data.json';
     ],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],//swiper
 })
-export class HomeComponent implements OnInit {
+export class HomeComponent implements OnInit, OnDestroy {
+    texts: any;
     isWorkExperience: boolean = true;
     mySkills!: any;
     projectDetails!: any;
     workExperienceDetails!: any;
     coursesExperienceDetails!: any;
+    private subscription: Subscription = new Subscription();
+
+    constructor(private dataService: DataService) {}
+
+    ngOnInit(): void {
+        this.mySkills = this.dataService.mySkills;
+        this.projectDetails = this.dataService.projectDetails;
+        this.workExperienceDetails = this.dataService.workExperienceDetails;
+        this.coursesExperienceDetails = this.dataService.coursesExperienceDetails;
+        this.subscription = this.dataService.texts$.subscribe(texts => {
+            this.texts = texts;
+        });
+    }
+    ngOnDestroy(): void {
+        this.subscription.unsubscribe();
+    }
 
     toggleExperience(isWorkExperience: boolean) {
         this.isWorkExperience = isWorkExperience;
-    }
-    ngOnInit(): void {
-        this.mySkills = data.skills;
-        this.projectDetails = data.projects;
-        this.workExperienceDetails = data.workExperiences;
-        this.coursesExperienceDetails = data.coursesExperiences;
     }
 }

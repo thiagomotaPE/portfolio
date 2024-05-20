@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-saudation',
@@ -8,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrl: './saudation.component.scss'
 })
 export class SaudationComponent {
-
+  @Input() texts: any;
 }

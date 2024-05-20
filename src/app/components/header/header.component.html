@@ -7,15 +7,15 @@
 
     <div class="navigation-area">
         <nav>
-            <a href="#home" (click)="selectOption(1)" [class.active]="selectedOption === 1">Inicio</a>
-            <a href="#about" (click)="selectOption(2)" [class.active]="selectedOption === 2">Sobre mim</a>
-            <a href="#projects" (click)="selectOption(3)" [class.active]="selectedOption === 3">Projetos</a>
-            <a href="#experience" (click)="selectOption(4)" [class.active]="selectedOption === 4">Experiencia</a>
+            <a href="#home" (click)="selectOption(1)" [class.active]="selectedOption === 1">{{ texts.option1 }}</a>
+            <a href="#about" (click)="selectOption(2)" [class.active]="selectedOption === 2">{{ texts.option2 }}</a>
+            <a href="#projects" (click)="selectOption(3)" [class.active]="selectedOption === 3">{{ texts.option3 }}</a>
+            <a href="#experience" (click)="selectOption(4)" [class.active]="selectedOption === 4">{{ texts.option4 }}</a>
         </nav>
     </div>
 
     <div class="settings-area">
-        <app-theme-button></app-theme-button>
-        <!-- <app-language-button></app-language-button> -->
+        <app-theme-button [title]="texts.themeTitle"></app-theme-button>
+        <app-language-button></app-language-button>
     </div>
 </header>
