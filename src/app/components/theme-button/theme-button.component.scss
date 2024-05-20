@@ -58,3 +58,10 @@
       background-position: -100% 0;
     }
 }
+
+/* Regras para telas menores (celulares) */
+@media screen and (max-width: 760px) {
+    .switch {
+        display: none;
+    }
+}

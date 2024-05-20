@@ -88,7 +88,6 @@ header > .navigation-area > nav > a:after {
 /* Regras para telas menores (celulares) */
 @media screen and (max-width: 760px) {
     header {
-        justify-content: center;
         padding: 10px;
         margin: 20px 1.4%;
         width: 97vw;
@@ -107,9 +106,6 @@ header > .navigation-area > nav > a:after {
                 margin: 6px;
             }
            }
-        }
-        .settings-area {
-            display: none;
         }
     }
 }
