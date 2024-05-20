@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { LanguageService } from '../../services/language.service';
+import { DataService } from '../../services/data/data.service';
 
 @Component({
   selector: 'app-language-button',
@@ -9,18 +9,17 @@ import { LanguageService } from '../../services/language.service';
   styleUrl: './language-button.component.css'
 })
 export class LanguageButtonComponent {
-  constructor(private languageService: LanguageService) {}
+  constructor(private dataService: DataService) {}
 
-  language: string = 'PT-BR'
+  language: string = 'pt-br'
 
   changeLanguage() {
-    if(this.language == 'PT-BR') {
-      this.language = 'EN';
-      this.languageService.switchLanguage('en');
+    if(this.language == 'pt-br') {
+      this.language = 'en-us';
+      this.dataService.setLanguage(this.language);
     } else {
-      this.language = 'PT-BR';
-      this.languageService.switchLanguage('pt');
-
+      this.language = 'pt-br';
+      this.dataService.setLanguage(this.language);
     }
   }
 }

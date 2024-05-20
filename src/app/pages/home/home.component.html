@@ -1,28 +1,28 @@
 <section class="home" id="home">
     <div class="saudation">
         <div class="saudation-content">
-            <app-saudation></app-saudation>
+            <app-saudation [texts]="texts.home"></app-saudation>
         </div>
         <div class="download-cv">
-            <app-button title="Baixar curriculo"></app-button>
+            <app-button [texts]="texts.home"></app-button>
         </div>
         <div class="social-midias">
             <app-social-midias></app-social-midias>
         </div>
     </div>
     <div class="avatar">
-        <app-avatar></app-avatar>
+        <app-avatar [texts]="texts.home"></app-avatar>
     </div>
 </section>
 
 <section class="about" id="about">
     <div class="about-content">
         <div class="description">
-            <app-resume></app-resume>
+            <app-resume [texts]="texts.about"></app-resume>
         </div>
     </div>
     <div class="skills">
-        <h3 class="skills-title">Skills</h3>
+        <h3 class="skills-title">{{ texts.about.titleHabilities }}</h3>
         <div class="skills-items">
             <app-hard-skill [skills]="mySkills" size="1rem"></app-hard-skill>
         </div>
@@ -45,20 +45,20 @@
     >
         @for (detail of projectDetails; track detail.id) {
             <swiper-slide>
-                <app-project-card [details]="detail"></app-project-card>
+                <app-project-card [texts]="texts.projects" [details]="detail"></app-project-card>
             </swiper-slide> 
         }
     </swiper-container>
     <div class="projects-container">
         @for (detail of projectDetails; track detail.id) {
-            <app-project-card [details]="detail"></app-project-card>
+            <app-project-card [texts]="texts.projects" [details]="detail"></app-project-card>
         }
     </div>
 </section>
 
 <section class="experience" id="experience">
     <div class="experience-type-menu">
-        <app-options-window title="Experiência" option1="Trabalho" option2="Estudo"  (optionSelected)="toggleExperience($event)"></app-options-window>
+        <app-options-window [title]="texts.experience.windowOption" [option1]="texts.experience.option1" [option2]="texts.experience.option2"  (optionSelected)="toggleExperience($event)"></app-options-window>
     </div>
     <i class="fa-solid fa-chevron-up"></i>
     <div class="experience-content">
@@ -76,5 +76,5 @@
 </section>
 
 <section class="footer">
-    <app-footer></app-footer>
+    <app-footer [texts]="texts.footer"></app-footer>
 </section>

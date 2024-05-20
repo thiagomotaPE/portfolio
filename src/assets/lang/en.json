@@ -1,0 +1,36 @@
+{
+    "header": {
+        "option1": "Home",
+        "option2": "About",
+        "option3": "Projects",
+        "option4": "Experience",
+        "themeTitle": "Change theme"
+    },
+    "home": {
+        "saudation": "Hi there 👋, I’m",
+        "button": "Download CV",
+        "buttonTitle": "Download CV",
+        "avatarAlt": "Thiago Mota's pixar avatar"
+    },
+    "about": {
+        "title": "What is my goal?",
+        "catchphrase": "positively impacting people's lives through technology",
+        "resume1": " My journey as a developer is more than a career; it's a constant search for ways to",
+        "resume2": " make a difference",
+        "resume3": ". Check out my portfolio and see how I'm using technology to",
+        "resume4": "transform lives",
+        "titleHabilities": "Skills"
+    },
+    "projects": {
+        "icon1Title": "Project repository",
+        "icon2Title": "Project deploy"
+    },
+    "experience": {
+        "windowOption": "Experience",
+        "option1": "Work",
+        "option2": "Study"
+    },
+    "footer": {
+        "iconCvTitle": "Download my cv"
+    }
+}

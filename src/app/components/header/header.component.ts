@@ -1,4 +1,4 @@
-import { Component, HostListener, Renderer2 } from '@angular/core';
+import { Component, HostListener, Input, Renderer2 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { ThemeButtonComponent } from '../theme-button/theme-button.component';
 import { CommonModule } from '@angular/common';
@@ -13,6 +13,7 @@ import { TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 export class HeaderComponent {
+  @Input() texts: any;
   isScrolled = false;
   selectedOption: number | null = null;
   constructor(private renderer: Renderer2) { }
