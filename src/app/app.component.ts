@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './components/header/header.component';
-import { HttpClientModule } from '@angular/common/http';
 import { DataService } from './services/data/data.service';
 
 @Component({
@@ -10,7 +9,6 @@ import { DataService } from './services/data/data.service';
   imports: [
     RouterOutlet, 
     RouterModule, 
-    HttpClientModule, 
     HeaderComponent
   ],
   templateUrl: './app.component.html',
