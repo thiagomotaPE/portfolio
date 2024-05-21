@@ -114,6 +114,9 @@ header > .navigation-area > nav > a:after {
            }
         }
     }
+    .scrolled {
+        padding: 10px;
+    }
 }
 
 /* Regras para telas médias (tablets) */
@@ -137,6 +140,9 @@ header > .navigation-area > nav > a:after {
                 }
             } 
         } 
+    }
+    .scrolled {
+        padding: 10px;
     }
 }
 
