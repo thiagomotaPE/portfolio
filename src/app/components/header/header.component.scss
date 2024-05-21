@@ -51,6 +51,12 @@ header {
         text-align: center;
     }
 }
+.scrolled {
+    padding: 0px 20px;
+    border-radius: 50px;
+    background: rgba(114, 114, 114, .2);
+    backdrop-filter: blur(10px);
+}
     
 #logo {
     font-family: var(--firstFont);

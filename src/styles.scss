@@ -43,7 +43,16 @@
 
 body {
     background-color: var(--backgroundColor1);
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    &::-webkit-scrollbar{
+        background-color: var(--backgroundColor1);
+        width: 5px;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: var(--backgroundColor2);
+        height: 138px;
+    }
 }
 
 /* Regras para telas menores (celulares) */

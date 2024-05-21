@@ -5,7 +5,6 @@ import { SocialMidiasComponent } from '../../components/social-midias/social-mid
 import { ButtonComponent } from '../../components/button/button.component';
 import { AvatarComponent } from '../../components/avatar/avatar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
-import { PhotoComponent } from '../../components/photo/photo.component';
 import { ResumeComponent } from '../../components/resume/resume.component';
 import { HardSkillComponent } from '../../components/hard-skills/hard-skill.component';
 import { OptionsWindowComponent } from '../../components/options-window/options-window.component';
@@ -28,7 +27,6 @@ import { Subscription } from 'rxjs';
         ButtonComponent, 
         AvatarComponent, 
         FooterComponent,
-        PhotoComponent,
         ResumeComponent,
         HardSkillComponent,
         OptionsWindowComponent,
