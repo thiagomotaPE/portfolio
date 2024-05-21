@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
-import * as data from '../../../database/data.json';
-import * as pt from '../../../assets/lang/pt.json';
-import * as en from '../../../assets/lang/en.json';
+import * as data from '../../../database/data/data.json';
+import * as pt from '../../../database/lang/pt.json';
+import * as en from '../../../database/lang/en.json';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({
