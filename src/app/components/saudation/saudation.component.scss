@@ -47,23 +47,25 @@ p {
 .function .icon {
     margin-right: 3px;
 }
-.function .function-span {
-    position: relative;
+.function {
+    .function-span {
+        position: relative;
 
-    &::before{
-        content: '';
-        animation: words 40s infinite;
-    }
-    &::after {
-        content: '';
-        background-color: var(--backgroundColor1);
-        position: absolute;
-        width: calc(100% + 8px);
-        height: 25px;
-        border-left: 2px solid var(--contrastColor);
-        right: -8px;
-        animation: cursor .8s infinite linear, typing 40s steps(34) infinite;
-    }       
+        &::before{
+            content: '';
+            animation: words 40s infinite;
+        }
+        &::after {
+            content: '';
+            background-color: var(--backgroundColor1);
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 25px;
+            border-left: 2px solid var(--contrastColor);
+            right: -8px;
+            animation: cursor .8s infinite linear, typing 40s steps(34) infinite;
+        }   
+    }    
 }
 
 @keyframes cursor {
