@@ -62,16 +62,15 @@ p {
         height: 25px;
         border-left: 2px solid var(--contrastColor);
         right: -8px;
-        animation: cursor .8s infinite linear,typing 40s steps(34) infinite;
+        animation: cursor .8s infinite linear;
+    }    
+    &::after {
+        animation: typing 40s steps(34) infinite;
     }    
 }
 
 @keyframes cursor {
     to {border-left: 2px solid var(--backgroundColor1);}
-}
-@-webkit-keyframes cursor {
-    0% { border-left: 2px solid var(--contrastColor); }
-    100% { border-left: 2px solid var(--backgroundColor1); }
 }
 
 @keyframes words {
@@ -81,21 +80,10 @@ p {
     61%,80%{content: 'Desenvolvedor Freelancer';}
     81%,100%{content: 'Desenvolvedor de Jogos';}
 }
-@-webkit-keyframes words {
-    0%, 20% { content: 'Desenvolvedor de software'; }
-    21%, 40% { content: 'Desenvolvedor Fullstack'; }
-    41%, 60% { content: 'Web Designer'; }
-    61%, 80% { content: 'Desenvolvedor Freelancer'; }
-    81%, 100% { content: 'Desenvolvedor de Jogos'; }
-}
 
 @keyframes typing {
     10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{width: 0;}
     5%,20%,25%,40%,45%,60%,65%,80%,85%{width: calc(100% + 8px);}
-}
-@-webkit-keyframes typing {
-    0%, 10%, 15%, 30%, 35%, 50%, 55%, 70%, 75%, 90%, 95% { width: 0; }
-    5%, 20%, 25%, 40%, 45%, 60%, 65%, 80%, 85% { width: calc(100% + 8px); }
 }
 
 @media screen and (max-width:  680px) {
