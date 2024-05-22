@@ -62,11 +62,8 @@ p {
         height: 25px;
         border-left: 2px solid var(--contrastColor);
         right: -8px;
-        animation: cursor .8s infinite linear;
-    }    
-    &::after {
-        animation: typing 40s steps(34) infinite;
-    }    
+        animation: cursor .8s infinite linear, typing 40s steps(34) infinite;
+    }       
 }
 
 @keyframes cursor {
