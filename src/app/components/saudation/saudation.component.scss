@@ -63,7 +63,7 @@ p {
             height: 25px;
             border-left: 2px solid var(--contrastColor);
             right: -8px;
-            animation: cursor-animation .8s infinite linear, typing 40s steps(34) infinite;
+            animation: typing 40s steps(34) infinite, cursor-animation .8s infinite linear;
         }   
     }    
 }
