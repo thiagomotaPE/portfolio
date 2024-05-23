@@ -47,37 +47,37 @@ p {
 .function .icon {
     margin-right: 3px;
 }
-.function .function-span {
-    position: relative;
+.function {
+    .function-span {
+        position: relative;
 
-    &::before{
-        content: '';
-        animation: words 40s infinite;
-    }
-    &::after {
-        content: '';
-        background-color: var(--backgroundColor1);
-        position: absolute;
-        width: calc(100% + 8px);
-        height: 25px;
-        border-left: 2px solid var(--contrastColor);
-        right: -8px;
-        animation: cursor .8s infinite linear, typing 40s steps(34) infinite;
-    }       
+        &::before{
+            content: '';
+            animation: words 40s infinite;
+        }
+        &::after {
+            content: '';
+            background-color: var(--backgroundColor1);
+            position: absolute;
+            width: calc(100% + 8px);
+            height: 25px;
+            border-left: 2px solid var(--contrastColor);
+            right: -8px;
+            animation: cursor-animation .8s infinite linear, typing 40s steps(34) infinite;
+        }   
+    }    
 }
 
-@keyframes cursor {
+@keyframes cursor-animation {
     to {border-left: 2px solid var(--backgroundColor1);}
 }
-
 @keyframes words {
-    0%,20%{content: 'Desenvolvedor de software';}
-    21%,40%{content: 'Desenvolvedor Fullstack';}
-    41%,60%{content: 'Web Designer';}
-    61%,80%{content: 'Desenvolvedor Freelancer';}
-    81%,100%{content: 'Desenvolvedor de Jogos';}
+    0%,20%{content: 'Software developer';}
+    21%,40%{content: 'Fullstack developer';}
+    41%,60%{content: 'Web developer';}
+    61%,80%{content: 'Freelancer developer';}
+    81%,100%{content: 'Game developer';}
 }
-
 @keyframes typing {
     10%,15%,30%,35%,50%,55%,70%,75%,90%,95%{width: 0;}
     5%,20%,25%,40%,45%,60%,65%,80%,85%{width: calc(100% + 8px);}
