@@ -28,7 +28,8 @@
     "experience": {
         "windowOption": "Experience",
         "option1": "Work",
-        "option2": "Study"
+        "option2": "Study",
+        "jobDetail": "More details"
     },
     "footer": {
         "iconCvTitle": "Download my cv"

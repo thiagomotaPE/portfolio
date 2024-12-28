@@ -8,7 +8,8 @@
         {"name": "React.Js"},
         {"name": "SpringBoot"},
         {"name": "Java"},
-        {"name": "MySql"},
+        {"name": "MySql"}, 
+        {"name": "PL/SQL"}, 
         {"name": "SQLite"},
         {"name": "Git"},
         {"name": "Docker"},
@@ -57,61 +58,6 @@
             ]
         },
         {
-            "id": 4,
-            "name": "Cats",
-            "link": "https://github.com/thiagomotaPE/cats",
-            "repository": "https://github.com/thiagomotaPE/cats",
-            "tecnologies": [
-                {"name": "Angular"},
-                {"name": "Nest.Js"},
-                {"name": "Typescript"},
-                {"name": "TypeORM"},
-                {"name": "SQlite"},
-                {"name": "Jwt"},
-                {"name": "Docker"}
-            ]
-        },
-        {
-            "id": 5,
-            "name": "Crud Springboot",
-            "link": "https://github.com/thiagomotaPE/CRUD-JavaSpring",
-            "repository": "https://github.com/thiagomotaPE/CRUD-JavaSpring",
-            "tecnologies": [
-                {"name": "SpringBoot"},
-                {"name": "Java"},
-                {"name": "Api Rest"},
-                {"name": "FlyAway migrations"},
-                {"name": "JPA"},
-                {"name": "PostgreSql"}
-            ]
-        },
-        {
-            "id": 6,
-            "name": "Cardapio web",
-            "link": "https://github.com/thiagomotaPE/cardapioWebApp",
-            "repository": "https://github.com/thiagomotaPE/cardapioWebApp",
-            "tecnologies": [
-                {"name": "React.js"},
-                {"name": "Typescript"},
-                {"name": "SpringBoot"},
-                {"name": "Java"},
-                {"name": "Api Rest"},
-                {"name": "FlyAway migrations"},
-                {"name": "JPA"},
-                {"name": "PostgreSql"}
-            ]
-        },
-        {
-            "id": 7,
-            "name": "ResidentEvil 2D",
-            "link": "https://github.com/thiagomotaPE/ResidentEvil2D",
-            "repository": "https://github.com/thiagomotaPE/ResidentEvil2D",
-            "tecnologies": [
-                {"name": "Java"},
-                {"name": "Logica de programação"}
-            ]
-        },
-        {
             "id": 8,
             "name": "Extreme gym",
             "link": "https://extreme-gym.vercel.app/",
@@ -135,17 +81,6 @@
             ]
         },
         {
-            "id": 10,
-            "name": "Calculadora",
-            "link": "https://github.com/thiagomotaPE/Calculadora-ReactJs",
-            "repository": "https://github.com/thiagomotaPE/Calculadora-ReactJs",
-            "tecnologies": [
-                {"name": "React.js"},
-                {"name": "Styled-components"},
-                {"name": "Typescript"}
-            ]
-        },
-        {
             "id": 11,
             "name": "Projeto android",
             "link": "https://thiagomotape.github.io/projeto-android/",
@@ -160,6 +95,23 @@
     "workExperiences": [
         {
             "id": 1,
+            "name": "Desenvolvedor Junior",
+            "link": "https://www.linkedin.com/feed/",
+            "companyName": "MV Informatica",
+            "inicialDate": "01/07/2023",
+            "finalDate": "presente",
+            "tecnologies": [
+                {"name": "Java"},
+                {"name": "PL/SQL"},
+                {"name": "XML"},
+                {"name": "Tomcat"},
+                {"name": "Git"},
+                {"name": "Integração de sistemas"},
+                {"name": "Webservices"}
+            ]
+        },
+        {
+            "id": 2,
             "name": "Estagio em desenvolvimento web",
             "link": "https://www.linkedin.com/feed/",
             "companyName": "Techno Ok",
@@ -175,7 +127,7 @@
             ]
         },
         {
-            "id": 2,
+            "id": 3,
             "name": "Estagio em desenvolvimento RPA",
             "link": "https://www.linkedin.com/feed/",
             "companyName": "Rede Damas Educacional",
@@ -188,7 +140,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "name": "Atendente de Loja",
             "link": "https://www.linkedin.com/feed/",
             "companyName": "Nene Mota doces e salgados",

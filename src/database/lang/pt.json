@@ -28,7 +28,8 @@
     "experience": {
         "windowOption": "Experiência",
         "option1": "Trabalho",
-        "option2": "Estudo"
+        "option2": "Estudo",
+        "jobDetail": "Mais detalhes"
     },
     "footer": {
         "iconCvTitle": "Baixe o meu curriculo"

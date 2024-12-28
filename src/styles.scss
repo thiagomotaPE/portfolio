@@ -44,7 +44,7 @@
 body {
     background-color: var(--backgroundColor1);
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: hidden;
     &::-webkit-scrollbar{
         background-color: var(--backgroundColor1);
         width: 5px;
